@@ -1,8 +1,14 @@
 // variable scss
 @import "variables";
 
+html{
+    font-size: 12px;
+    color: $color-primary;
+}
+
 // mixin scss
 @import "mixins";
+@import "utils";
 
 // button scss
 @import "button";
