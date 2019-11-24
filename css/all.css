@@ -3,11 +3,30 @@ html {
   color: #000;
 }
 
+.row, .col, .col-1, .col-10, .col-11, .col-12, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-auto, .col-lg, .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-auto, .col-md, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-auto, .col-sm, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-auto, .col-xl, .col-xl-1, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-auto {
+  margin: 0;
+}
+
 /**********************utils part css*******************/
+.u-flex {
+  display: flex;
+}
+
+.u-flex-center {
+  display: flex;
+  align-items: center;
+}
+
 .u-flex-space-between {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.u-flex-direcion-colum-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .u-uppercase {
@@ -89,20 +108,97 @@ nav a:hover {
 .c-rendez-vous .c-rendez-vous__list .c-rendez-vous-list__info .c-rendez-vous-list-info__coordinate > div:nth-of-type(2) span {
   font-size: 1.16rem;
 }
-.c-rendez-vous .main-container-wrapper {
+
+.c-search-client {
+  padding: 4.16rem 3.33rem 5.83rem;
+  background-color: #f2f6f9;
+}
+.c-search-client .c-search-client__search-block h2 {
+  font-size: 2.5rem;
+  margin-bottom: 3.75rem;
+}
+.c-search-client .c-search-client__search-block .c-search-client-search-block__result {
+  background-color: #fff;
+  border-radius: 0.312rem;
+  margin-top: 0.833rem;
+  padding: 1.5rem 4rem 1.33rem 1rem;
+}
+.c-search-client .c-search-client__search-block .c-search-client-search-block__result .c-info-block h3 {
+  font-size: 1.166rem;
+  font-weight: bold;
+  margin-left: 8px;
+}
+.c-search-client .c-search-client__search-block .c-search-client-search-block__result .c-info-block h4 {
+  color: #9b9b9b;
+  font-size: 1rem;
+  margin-left: 34px;
+}
+.c-search-client .c-search-client__search-block .c-search-client-search-block__result .c-info-block h4 + div {
+  margin-left: 34px;
+}
+.c-search-client .c-search-client__search-block .c-search-client-search-block__result .c-info-block h4 + div span {
+  color: #000;
+  font-size: 0.83rem;
+}
+.c-search-client .c-search-client__search-block .c-search-client-search-block__result .c-info-block .o-picture-user {
+  width: 26px;
+  height: 26px;
+  background-color: #dedede;
+  border-radius: 50px;
+}
+.c-search-client .c-search-client__search-block .c-search-client-search-block__result .u-flex-direcion-colum-center {
+  margin-left: 5.25rem;
+}
+@media screen and (min-width: 1000px) and (max-width: 1230px) {
+  .c-search-client .c-search-client__search-block .c-search-client-search-block__result .u-flex-direcion-colum-center {
+    margin-left: 3.25rem;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .c-search-client .c-search-client__search-block .c-search-client-search-block__result .u-flex-direcion-colum-center {
+    margin-left: 1rem;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 800px) {
+  .c-search-client .c-search-client__search-block .c-search-client-search-block__result .u-flex-direcion-colum-center {
+    margin-left: 0.2rem;
+  }
+}
+.c-search-client .c-search-client__search-block .c-search-client-search-block__result .u-flex-direcion-colum-center > div {
+  background-color: #000;
+  width: 25px;
+  height: 25px;
+  border-radius: 50px;
+  text-align: center;
+}
+.c-search-client .c-search-client__search-block input {
+  border-radius: 0.312rem;
+  border: 0 none !important;
+  padding: 1.9rem 0 1.9rem 1.25rem !important;
+  font-size: 1.33rem;
+}
+.c-search-client .c-search-client__search-block .input-group-text {
+  border: 0;
+  background-color: #fff;
+  padding-right: 1.25rem;
+  font-size: 1.3rem;
+  color: #4d4d4d;
+}
+
+.c-calendar .main-container-wrapper {
   background-color: #F8FAFA;
   min-width: 320px;
   max-width: 575px;
   overflow-y: auto;
 }
 @media (min-width: 415px) {
-  .c-rendez-vous .main-container-wrapper {
+  .c-calendar .main-container-wrapper {
     -moz-box-shadow: 0px 32px 47px rgba(32, 23, 23, 0.09);
     -webkit-box-shadow: 0px 32px 47px rgba(32, 23, 23, 0.09);
     box-shadow: 0px 32px 47px rgba(32, 23, 23, 0.09);
   }
 }
-.c-rendez-vous header {
+.c-calendar header {
   background-color: #fff;
   display: flex;
   height: 58px;
@@ -110,7 +206,7 @@ nav a:hover {
   overflow: hidden;
   position: relative;
 }
-.c-rendez-vous .header__btn {
+.c-calendar .header__btn {
   background-color: #86D8C9;
   border: 2px solid #fff;
   border-radius: 50%;
@@ -124,34 +220,34 @@ nav a:hover {
   top: -25px;
   width: 80px;
 }
-.c-rendez-vous .header__btn:hover, .c-rendez-vous .header__btn:focus {
+.c-calendar .header__btn:hover, .c-calendar .header__btn:focus {
   background: #67cebb;
   transition: all 0.3s ease-in;
   outline: none;
 }
-.c-rendez-vous .header__btn .icon {
+.c-calendar .header__btn .icon {
   display: inline-block;
 }
-.c-rendez-vous .header__btn--left {
+.c-calendar .header__btn--left {
   left: -25px;
   padding-left: 38px;
   text-align: left;
 }
-.c-rendez-vous .header__btn--right {
+.c-calendar .header__btn--right {
   padding-right: 32px;
   right: -25px;
   text-align: right;
 }
-.c-rendez-vous .calendar-container {
+.c-calendar .calendar-container {
   background-color: #fff;
   padding: 16px;
   margin-bottom: 24px;
 }
-.c-rendez-vous .calendar-container__header {
+.c-calendar .calendar-container__header {
   display: flex;
   justify-content: space-between;
 }
-.c-rendez-vous .calendar-container__btn {
+.c-calendar .calendar-container__btn {
   background: transparent;
   border: 0;
   cursor: pointer;
@@ -159,20 +255,20 @@ nav a:hover {
   outline: none;
   color: #E9E8E8;
 }
-.c-rendez-vous .calendar-container__btn:hover, .c-rendez-vous .calendar-container__btn:focus {
+.c-calendar .calendar-container__btn:hover, .c-calendar .calendar-container__btn:focus {
   color: #9FAAB7;
   transition: all 0.3s ease-in;
 }
-.c-rendez-vous .calendar-container__title {
+.c-calendar .calendar-container__title {
   color: #000;
   font-size: 20px;
   font-weight: 700;
 }
-.c-rendez-vous .calendar-table {
+.c-calendar .calendar-table {
   margin-top: 12px;
   width: 100%;
 }
-.c-rendez-vous .calendar-table__item {
+.c-calendar .calendar-table__item {
   border: 2px solid transparent;
   border-radius: 50%;
   color: #424588;
@@ -185,22 +281,22 @@ nav a:hover {
   justify-content: center;
   cursor: pointer;
 }
-.c-rendez-vous .calendar-table__item:hover {
+.c-calendar .calendar-table__item:hover {
   background: #f8fafa;
   -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
   -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
   transition: 0.2s all ease-in;
 }
-.c-rendez-vous .calendar-table__row {
+.c-calendar .calendar-table__row {
   display: flex;
   justify-content: center;
 }
-.c-rendez-vous .calendar-table__header {
+.c-calendar .calendar-table__header {
   border-bottom: 2px solid #F2F6F8;
   margin-bottom: 4px;
 }
-.c-rendez-vous .calendar-table__header .calendar-table__col {
+.c-calendar .calendar-table__header .calendar-table__col {
   display: inline-block;
   color: #99A4AE;
   font-size: 12px;
@@ -212,40 +308,40 @@ nav a:hover {
   height: 38px;
 }
 @media (min-width: 360px) {
-  .c-rendez-vous .calendar-table__header .calendar-table__col {
+  .c-calendar .calendar-table__header .calendar-table__col {
     width: 46px;
   }
 }
 @media (min-width: 410px) {
-  .c-rendez-vous .calendar-table__header .calendar-table__col {
+  .c-calendar .calendar-table__header .calendar-table__col {
     width: 54px;
   }
 }
-.c-rendez-vous .calendar-table__body .calendar-table__col {
+.c-calendar .calendar-table__body .calendar-table__col {
   width: 40px;
   height: 42px;
   padding-bottom: 2px;
 }
 @media (min-width: 360px) {
-  .c-rendez-vous .calendar-table__body .calendar-table__col {
+  .c-calendar .calendar-table__body .calendar-table__col {
     width: 46px;
     height: 48px;
   }
 }
 @media (min-width: 410px) {
-  .c-rendez-vous .calendar-table__body .calendar-table__col {
+  .c-calendar .calendar-table__body .calendar-table__col {
     width: 54px;
     height: 56px;
   }
 }
-.c-rendez-vous .calendar-table__today .calendar-table__item {
+.c-calendar .calendar-table__today .calendar-table__item {
   border-color: #FEFEFE;
   background-color: #F2F6F8;
   -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
   -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
 }
-.c-rendez-vous .calendar-table__event .calendar-table__item {
+.c-calendar .calendar-table__event .calendar-table__item {
   background-color: #000;
   border-color: #FEFEFE;
   -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
@@ -253,56 +349,56 @@ nav a:hover {
   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
   color: #fff;
 }
-.c-rendez-vous .calendar-table__event--long {
+.c-calendar .calendar-table__event--long {
   overflow-x: hidden;
 }
-.c-rendez-vous .calendar-table__event--long .calendar-table__item {
+.c-calendar .calendar-table__event--long .calendar-table__item {
   border-radius: 0;
   border-width: 2px 0;
 }
-.c-rendez-vous .calendar-table__event--start .calendar-table__item {
+.c-calendar .calendar-table__event--start .calendar-table__item {
   border-left: 2px solid #fff;
   border-radius: 50% 0 0 50%;
 }
-.c-rendez-vous .calendar-table__event--start.calendar-table__col:last-child .calendar-table__item {
+.c-calendar .calendar-table__event--start.calendar-table__col:last-child .calendar-table__item {
   border-width: 2px;
 }
-.c-rendez-vous .calendar-table__event--end .calendar-table__item {
+.c-calendar .calendar-table__event--end .calendar-table__item {
   border-right: 2px solid #fff;
   border-radius: 0 50% 50% 0;
 }
-.c-rendez-vous .calendar-table__event--end.calendar-table__col:first-child .calendar-table__item {
+.c-calendar .calendar-table__event--end.calendar-table__col:first-child .calendar-table__item {
   border-width: 2px;
 }
-.c-rendez-vous .calendar-table__inactive .calendar-table__item {
+.c-calendar .calendar-table__inactive .calendar-table__item {
   color: #DCDCE3;
   cursor: default;
 }
-.c-rendez-vous .calendar-table__inactive .calendar-table__item:hover {
+.c-calendar .calendar-table__inactive .calendar-table__item:hover {
   background: transparent;
   box-shadow: none;
 }
-.c-rendez-vous .calendar-table__inactive.calendar-table__event .calendar-table__item {
+.c-calendar .calendar-table__inactive.calendar-table__event .calendar-table__item {
   color: #fff;
   opacity: 0.25;
 }
-.c-rendez-vous .calendar-table__inactive.calendar-table__event .calendar-table__item:hover {
+.c-calendar .calendar-table__inactive.calendar-table__event .calendar-table__item:hover {
   background: #000;
   -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
   -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
 }
-.c-rendez-vous .events-container {
+.c-calendar .events-container {
   padding: 0 15px;
 }
-.c-rendez-vous .events__title {
+.c-calendar .events__title {
   color: #BEC1CA;
   display: inline-block;
   font-size: 14px;
   font-weight: 600;
   margin-bottom: 16px;
 }
-.c-rendez-vous .events__tag {
+.c-calendar .events__tag {
   background: #000;
   border: 2px solid #FEFEFE;
   -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
@@ -317,10 +413,10 @@ nav a:hover {
   padding: 5px 2px;
   text-align: center;
 }
-.c-rendez-vous .events__tag--highlighted {
+.c-calendar .events__tag--highlighted {
   background: #FDCA40;
 }
-.c-rendez-vous .events__item {
+.c-calendar .events__item {
   background: #fff;
   border-left: 8px solid #86D8C9;
   border-radius: 2px;
@@ -333,17 +429,17 @@ nav a:hover {
   align-items: center;
   margin-bottom: 16px;
 }
-.c-rendez-vous .events__item--left {
+.c-calendar .events__item--left {
   width: calc(100% - 76px);
 }
-.c-rendez-vous .events__name {
+.c-calendar .events__name {
   font-size: 12px;
   font-weight: 700;
   color: #000;
   display: block;
   margin-bottom: 6px;
 }
-.c-rendez-vous .events__date {
+.c-calendar .events__date {
   font-size: 12px;
   color: #9FAAB7;
   display: inline-block;

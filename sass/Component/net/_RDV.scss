@@ -48,10 +48,86 @@
 			}
 		}
 	}
+}
+
+.c-search-client {
+	padding: 4.16rem 3.33rem 5.83rem;
+	background-color: $color-bg;
+	.c-search-client__search-block {
+		h2 {
+			font-size: 2.5rem;
+			margin-bottom: 3.75rem;
+		}
+		.c-search-client-search-block__result {
+			background-color: $color-white;
+			border-radius: .312rem;
+			margin-top: 0.833rem;
+			padding: 1.5rem 4rem 1.33rem 1rem;
+			.c-info-block {
+				h3 {
+					font-size: 1.166rem;
+					font-weight: bold;
+					margin-left: 8px;
+				}
+				h4 {
+					color: $color-text-light;
+					font-size: 1rem;
+					margin-left: 34px;
+					&+div {
+						margin-left: 34px;
+						span {
+							color: $color-primary;
+							font-size: 0.83rem;
+						}
+					}
+				}
+				.o-picture-user {
+					width: 26px;
+					height: 26px;
+					background-color: $color-image-bg;
+					border-radius: 50px;
+				}
+			}
+			.u-flex-direcion-colum-center {
+				margin-left: 5.25rem;
+				@media screen and (min-width: 1000px) and (max-width: 1230px){
+					margin-left: 3.25rem;
+				}
+				@media screen and (max-width: 1000px){
+					margin-left: 1rem;
+				}
+				@media screen and (min-width: 768px) and (max-width: 800px){
+					margin-left: .2rem;
+				}
+				>div {
+					background-color: $color-primary;
+					width: 25px;
+					height: 25px;
+					border-radius: 50px;
+					text-align: center;
+				}
+			}
+		}
+		input {
+			border-radius: .312rem;
+			border: 0 none !important;
+			padding: 1.9rem 0 1.9rem 1.25rem !important;
+			font-size: 1.33rem;
+		}
+		.input-group-text{
+			border: 0;
+			background-color: $color-white;
+			padding-right: 1.25rem;
+			font-size: 1.3rem;
+			color: $color-icon-search;
+		}
+	}
+}
+
+.c-calendar {
 	//Text
 	$base__font-size: 16px;
-	$font-family--montserrat: 'Montserrat',
-	sans-serif;
+	$font-family--montserrat: 'Montserrat', sans-serif;
 	$font-family--primary: $font-family--montserrat;
 	//Colors
 	$white: #fff;

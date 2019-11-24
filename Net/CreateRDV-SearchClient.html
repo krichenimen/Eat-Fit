@@ -6,6 +6,8 @@
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <title>Eat & Feat</title>
       <link rel="icon" href="../img/favicon.png">
+      <!-- Font Awesome -->
+      <link href="../fonts/font-awesome/css/all.min.css" rel="stylesheet">
       <!-- Bootstrap CSS -->
       <link rel="stylesheet" href="../css/bootstrap.min.css">
       <!-- style -->
@@ -22,9 +24,9 @@
             <button type="button" class="btn btn-primary"> deconnexion</button>
          </div>
       </header>
-      <section class="c-rendez-vous">
+      <section class="c-search-client">
          <div class="row">
-            <div class="col-md-6 c-rendez-vous__calendar">
+            <div class="col-md-6 c-calendar">
                <div class="main-container-wrapper">
                   <main>
                      <div class="calendar-container">
@@ -243,74 +245,162 @@
                   </main>
                </div>
             </div>
-            <div class="col-md-6 c-rendez-vous__list">
-               <button class="btn btn-primary">Créer un  RENDEZ  VOUS</button>
-               <h2>Vote liste de RDV</h2>
-               <div class="c-rendez-vous-list__info u-flex-space-between">
-                  <div class="c-rendez-vous-list-info__date">
-                     <p class="u-lowercase">tue</p>
-                     <p>4</p>
-                     <p class="u-uppercase">july</p>
-                  </div>
-                  <div class="c-rendez-vous-list-info__coordinate">
-                     <div class="u-flex-space-between">
-                        <span>Appointment</span>
-                        <span>Dr. Merris</span>
+            <!-- search block-->
+            <div class="col-md-6 c-search-client__search-block">
+               <h2>Client existant</h2>
+               <div class="input-group">
+                  <input class="form-control py-2 border-right-0" type="search" value="search" id="example-search-input">
+                  <span class="input-group-append">
+                      <div class="input-group-text"><i class="fa fa-search"></i></div>
+                  </span>
+              </div>
+               
+               <!-- search result-->
+               <div class="u-flex-space-between c-search-client-search-block__result">
+                  <div class="c-info-block">
+                     <div class="u-flex-center">
+                        <div class="o-picture-user"></div>
+                        <!--<img src="" alt="">-->
+                        <h3>Brahim ROMDHAN</h3>
                      </div>
-                     <div class="u-flex-space-between">
-                        <span>Brahim ROMDHANE</span>
-                        <span>3:00 p.m</span>
-                     </div>
-                  </div>
-               </div>
-               <div class="c-rendez-vous-list__info u-flex-space-between">
-                  <div class="c-rendez-vous-list-info__date">
-                     <p class="u-lowercase">tue</p>
-                     <p>4</p>
-                     <p class="u-uppercase">july</p>
-                  </div>
-                  <div class="c-rendez-vous-list-info__coordinate">
-                     <div class="u-flex-space-between">
-                        <span>Appointment</span>
-                        <span>Dr. Merris</span>
-                     </div>
-                     <div class="u-flex-space-between">
-                        <span>Brahim ROMDHANE</span>
-                        <span>3:00 p.m</span>
+                     <h4>example@mail.com</h4>
+                     <div>
+                        <span>24 ANS</span>
+                        <span>117CM</span>
+                        <span>117CM</span>
                      </div>
                   </div>
-               </div>
-               <div class="c-rendez-vous-list__info u-flex-space-between">
-                  <div class="c-rendez-vous-list-info__date">
-                     <p class="u-lowercase">tue</p>
-                     <p>4</p>
-                     <p class="u-uppercase">july</p>
-                  </div>
-                  <div class="c-rendez-vous-list-info__coordinate">
-                     <div class="u-flex-space-between">
-                        <span>Appointment</span>
-                        <span>Dr. Merris</span>
-                     </div>
-                     <div class="u-flex-space-between">
-                        <span>Brahim ROMDHANE</span>
-                        <span>3:00 p.m</span>
+                  <div>
+                     <div class="u-flex-center">
+                        <div class="u-flex-direcion-colum-center">
+                           <div>
+                              <img src="../img/male.svg" alt="">
+                           </div>
+                           <h5 class="u-uppercase">HOMME</h5>
+                        </div>
+                        <div class="u-flex-direcion-colum-center">
+                           <div>
+                              <img src="../img/male.svg" alt="">
+                           </div>
+                           <h5 class="u-uppercase">Sédentaire</h5>
+                        </div>
+                        <div class="u-flex-direcion-colum-center">
+                           <div>
+                              <img src="../img/male.svg" alt="">
+                           </div>
+                           <h5 class="u-uppercase">SECHE</h5>
+                        </div>
                      </div>
                   </div>
                </div>
-               <div class="c-rendez-vous-list__info u-flex-space-between">
-                  <div class="c-rendez-vous-list-info__date">
-                     <p class="u-lowercase">tue</p>
-                     <p>4</p>
-                     <p class="u-uppercase">july</p>
-                  </div>
-                  <div class="c-rendez-vous-list-info__coordinate">
-                     <div class="u-flex-space-between">
-                        <span>Appointment</span>
-                        <span>Dr. Merris</span>
+               <div class="u-flex-space-between c-search-client-search-block__result">
+                  <div class="c-info-block">
+                     <div class="u-flex-center">
+                        <div class="o-picture-user"></div>
+                        <!--<img src="" alt="">-->
+                        <h3>Brahim ROMDHAN</h3>
                      </div>
-                     <div class="u-flex-space-between">
-                        <span>Brahim ROMDHANE</span>
-                        <span>3:00 p.m</span>
+                     <h4>example@mail.com</h4>
+                     <div>
+                        <span>24 ANS</span>
+                        <span>117CM</span>
+                        <span>117CM</span>
+                     </div>
+                  </div>
+                  <div>
+                     <div class="u-flex-center">
+                        <div class="u-flex-direcion-colum-center">
+                           <div>
+                              <img src="../img/male.svg" alt="">
+                           </div>
+                           <h5 class="u-uppercase">HOMME</h5>
+                        </div>
+                        <div class="u-flex-direcion-colum-center">
+                           <div>
+                              <img src="../img/male.svg" alt="">
+                           </div>
+                           <h5 class="u-uppercase">Sédentaire</h5>
+                        </div>
+                        <div class="u-flex-direcion-colum-center">
+                           <div>
+                              <img src="../img/male.svg" alt="">
+                           </div>
+                           <h5 class="u-uppercase">SECHE</h5>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="u-flex-space-between c-search-client-search-block__result">
+                  <div class="c-info-block">
+                     <div class="u-flex-center">
+                        <div class="o-picture-user"></div>
+                        <!--<img src="" alt="">-->
+                        <h3>Brahim ROMDHAN</h3>
+                     </div>
+                     <h4>example@mail.com</h4>
+                     <div>
+                        <span>24 ANS</span>
+                        <span>117CM</span>
+                        <span>117CM</span>
+                     </div>
+                  </div>
+                  <div>
+                     <div class="u-flex-center">
+                        <div class="u-flex-direcion-colum-center">
+                           <div>
+                              <img src="../img/male.svg" alt="">
+                           </div>
+                           <h5 class="u-uppercase">HOMME</h5>
+                        </div>
+                        <div class="u-flex-direcion-colum-center">
+                           <div>
+                              <img src="../img/male.svg" alt="">
+                           </div>
+                           <h5 class="u-uppercase">Sédentaire</h5>
+                        </div>
+                        <div class="u-flex-direcion-colum-center">
+                           <div>
+                              <img src="../img/male.svg" alt="">
+                           </div>
+                           <h5 class="u-uppercase">SECHE</h5>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="u-flex-space-between c-search-client-search-block__result">
+                  <div class="c-info-block">
+                     <div class="u-flex-center">
+                        <div class="o-picture-user"></div>
+                        <!--<img src="" alt="">-->
+                        <h3>Brahim ROMDHAN</h3>
+                     </div>
+                     <h4>example@mail.com</h4>
+                     <div>
+                        <span>24 ANS</span>
+                        <span>117CM</span>
+                        <span>117CM</span>
+                     </div>
+                  </div>
+                  <div>
+                     <div class="u-flex-center">
+                        <div class="u-flex-direcion-colum-center">
+                           <div>
+                              <img src="../img/male.svg" alt="">
+                           </div>
+                           <h5 class="u-uppercase">HOMME</h5>
+                        </div>
+                        <div class="u-flex-direcion-colum-center">
+                           <div>
+                              <img src="../img/male.svg" alt="">
+                           </div>
+                           <h5 class="u-uppercase">Sédentaire</h5>
+                        </div>
+                        <div class="u-flex-direcion-colum-center">
+                           <div>
+                              <img src="../img/male.svg" alt="">
+                           </div>
+                           <h5 class="u-uppercase">SECHE</h5>
+                        </div>
                      </div>
                   </div>
                </div>
