@@ -1,415 +1,422 @@
 <!doctype html>
 <html lang="fr">
-   <head>
-      <!-- Required meta tags -->
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <title>Eat & Feat</title>
-      <link rel="icon" href="../img/favicon.png">
-      <!-- Font Awesome -->
-      <link href="../fonts/font-awesome/css/all.min.css" rel="stylesheet">
-      <!-- Bootstrap CSS -->
-      <link rel="stylesheet" href="../css/bootstrap.min.css">
-      <!-- style -->
-      <link rel="stylesheet" href="../css/all.css">
-   </head>
-   <body>
-      <header>
-         <div class="u-flex-space-between">
-            <img src="" alt="">
-            <nav>
-               <a href="">client</a>
-               <a href="">rendez-vous</a>
-            </nav>
-            <button type="button" class="btn btn-primary"> deconnexion</button>
-         </div>
-      </header>
-      <section class="c-search-client">
-         <div class="row">
-            <div class="col-md-6 c-calendar">
-               <div class="main-container-wrapper">
-                  <main>
-                     <div class="calendar-container">
-                        <div class="calendar-container__header">
-                           <button class="calendar-container__btn calendar-container__btn--left" title="Previous">
+
+<head>
+   <!-- Required meta tags -->
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title>Eat & Feat</title>
+   <link rel="icon" href="../img/favicon.png">
+   <!-- Font Awesome -->
+   <link href="../fonts/font-awesome/css/all.min.css" rel="stylesheet">
+   <!-- Bootstrap CSS -->
+   <link rel="stylesheet" href="../css/bootstrap.min.css">
+   <!-- style -->
+   <link rel="stylesheet" href="../css/all.css">
+</head>
+
+<body>
+   <header>
+      <div class="u-flex-space-between">
+         <img src="" alt="">
+         <nav>
+            <a href="">client</a>
+            <a href="">rendez-vous</a>
+         </nav>
+         <button type="button" class="btn btn-primary"> deconnexion</button>
+      </div>
+   </header>
+   <section class="c-search-client">
+      <div class="row">
+         <div class="col-md-6 c-calendar">
+            <div class="main-container-wrapper">
+               <main>
+                  <div class="calendar-container">
+                     <div class="calendar-container__header">
+                        <button class="calendar-container__btn calendar-container__btn--left" title="Previous">
                            <i class="icon ion-ios-arrow-back"></i>
-                           </button>
-                           <h2 class="calendar-container__title">October 2018</h2>
-                           <button class="calendar-container__btn calendar-container__btn--right" title="Next">
+                        </button>
+                        <h2 class="calendar-container__title">October 2018</h2>
+                        <button class="calendar-container__btn calendar-container__btn--right" title="Next">
                            <i class="icon ion-ios-arrow-forward"></i>
-                           </button>
-                        </div>
-                        <div class="calendar-container__body">
-                           <div class="calendar-table">
-                              <div class="calendar-table__header">
-                                 <div class="calendar-table__row">
-                                    <div class="calendar-table__col">S</div>
-                                    <div class="calendar-table__col">M</div>
-                                    <div class="calendar-table__col">T</div>
-                                    <div class="calendar-table__col">W</div>
-                                    <div class="calendar-table__col">T</div>
-                                    <div class="calendar-table__col">F</div>
-                                    <div class="calendar-table__col">S</div>
+                        </button>
+                     </div>
+                     <div class="calendar-container__body">
+                        <div class="calendar-table">
+                           <div class="calendar-table__header">
+                              <div class="calendar-table__row">
+                                 <div class="calendar-table__col">S</div>
+                                 <div class="calendar-table__col">M</div>
+                                 <div class="calendar-table__col">T</div>
+                                 <div class="calendar-table__col">W</div>
+                                 <div class="calendar-table__col">T</div>
+                                 <div class="calendar-table__col">F</div>
+                                 <div class="calendar-table__col">S</div>
+                              </div>
+                           </div>
+                           <div class="calendar-table__body">
+                              <div class="calendar-table__row">
+                                 <div class="calendar-table__col calendar-table__inactive">
+                                    <div class="calendar-table__item">
+                                       <span>30</span>
+                                    </div>
+                                 </div>
+                                 <div class="calendar-table__col calendar-table__today">
+                                    <div class="calendar-table__item">
+                                       <span>1</span>
+                                    </div>
+                                 </div>
+                                 <div class="calendar-table__col">
+                                    <div class="calendar-table__item">
+                                       <span>2</span>
+                                    </div>
+                                 </div>
+                                 <div class="calendar-table__col">
+                                    <div class="calendar-table__item">
+                                       <span>3</span>
+                                    </div>
+                                 </div>
+                                 <div class="calendar-table__col">
+                                    <div class="calendar-table__item">
+                                       <span>4</span>
+                                    </div>
+                                 </div>
+                                 <div class="calendar-table__col calendar-table__event">
+                                    <div class="calendar-table__item">
+                                       <span>5</span>
+                                    </div>
+                                 </div>
+                                 <div class="calendar-table__col">
+                                    <div class="calendar-table__item">
+                                       <span>6</span>
+                                    </div>
                                  </div>
                               </div>
-                              <div class="calendar-table__body">
-                                 <div class="calendar-table__row">
-                                    <div class="calendar-table__col calendar-table__inactive">
-                                       <div class="calendar-table__item">
-                                          <span>30</span>
-                                       </div>
-                                    </div>
-                                    <div class="calendar-table__col calendar-table__today">
-                                       <div class="calendar-table__item">
-                                          <span>1</span>
-                                       </div>
-                                    </div>
-                                    <div class="calendar-table__col">
-                                       <div class="calendar-table__item">
-                                          <span>2</span>
-                                       </div>
-                                    </div>
-                                    <div class="calendar-table__col">
-                                       <div class="calendar-table__item">
-                                          <span>3</span>
-                                       </div>
-                                    </div>
-                                    <div class="calendar-table__col">
-                                       <div class="calendar-table__item">
-                                          <span>4</span>
-                                       </div>
-                                    </div>
-                                    <div class="calendar-table__col calendar-table__event">
-                                       <div class="calendar-table__item">
-                                          <span>5</span>
-                                       </div>
-                                    </div>
-                                    <div class="calendar-table__col">
-                                       <div class="calendar-table__item">
-                                          <span>6</span>
-                                       </div>
+                              <div class="calendar-table__row">
+                                 <div class="calendar-table__col calendar-table__event">
+                                    <div class="calendar-table__item">
+                                       <span>7</span>
                                     </div>
                                  </div>
-                                 <div class="calendar-table__row">
-                                    <div class="calendar-table__col calendar-table__event">
-                                       <div class="calendar-table__item">
-                                          <span>7</span>
-                                       </div>
-                                    </div>
-                                    <div class="calendar-table__col">
-                                       <div class="calendar-table__item">
-                                          <span>8</span>
-                                       </div>
-                                    </div>
-                                    <div class="calendar-table__col">
-                                       <div class="calendar-table__item">
-                                          <span>9</span>
-                                       </div>
-                                    </div>
-                                    <div class="calendar-table__col">
-                                       <div class="calendar-table__item">
-                                          <span>10</span>
-                                       </div>
-                                    </div>
-                                    <div class="calendar-table__col">
-                                       <div class="calendar-table__item">
-                                          <span>11</span>
-                                       </div>
-                                    </div>
-                                    <div class="calendar-table__col">
-                                       <div class="calendar-table__item">
-                                          <span>12</span>
-                                       </div>
-                                    </div>
-                                    <div class="calendar-table__col">
-                                       <div class="calendar-table__item">
-                                          <span>13</span>
-                                       </div>
+                                 <div class="calendar-table__col">
+                                    <div class="calendar-table__item">
+                                       <span>8</span>
                                     </div>
                                  </div>
-                                 <div class="calendar-table__row">
-                                    <div class="calendar-table__col">
-                                       <div class="calendar-table__item">
-                                          <span>14</span>
-                                       </div>
-                                    </div>
-                                    <div class="calendar-table__col">
-                                       <div class="calendar-table__item">
-                                          <span>15</span>
-                                       </div>
-                                    </div>
-                                    <div class="calendar-table__col calendar-table__event calendar-table__event--long calendar-table__event--start">
-                                       <div class="calendar-table__item">
-                                          <span>16</span>
-                                       </div>
-                                    </div>
-                                    <div class="calendar-table__col calendar-table__event calendar-table__event--long">
-                                       <div class="calendar-table__item">
-                                          <span>17</span>
-                                       </div>
-                                    </div>
-                                    <div class="calendar-table__col calendar-table__event calendar-table__event--long calendar-table__event--end">
-                                       <div class="calendar-table__item">
-                                          <span>18</span>
-                                       </div>
-                                    </div>
-                                    <div class="calendar-table__col">
-                                       <div class="calendar-table__item">
-                                          <span>19</span>
-                                       </div>
-                                    </div>
-                                    <div class="calendar-table__col">
-                                       <div class="calendar-table__item">
-                                          <span>20</span>
-                                       </div>
+                                 <div class="calendar-table__col">
+                                    <div class="calendar-table__item">
+                                       <span>9</span>
                                     </div>
                                  </div>
-                                 <div class="calendar-table__row">
-                                    <div class="calendar-table__col">
-                                       <div class="calendar-table__item">
-                                          <span>21</span>
-                                       </div>
-                                    </div>
-                                    <div class="calendar-table__col">
-                                       <div class="calendar-table__item">
-                                          <span>22</span>
-                                       </div>
-                                    </div>
-                                    <div class="calendar-table__col">
-                                       <div class="calendar-table__item">
-                                          <span>23</span>
-                                       </div>
-                                    </div>
-                                    <div class="calendar-table__col">
-                                       <div class="calendar-table__item">
-                                          <span>24</span>
-                                       </div>
-                                    </div>
-                                    <div class="calendar-table__col">
-                                       <div class="calendar-table__item">
-                                          <span>25</span>
-                                       </div>
-                                    </div>
-                                    <div class="calendar-table__col">
-                                       <div class="calendar-table__item">
-                                          <span>26</span>
-                                       </div>
-                                    </div>
-                                    <div class="calendar-table__col calendar-table__event calendar-table__event--long calendar-table__event--start">
-                                       <div class="calendar-table__item">
-                                          <span>27</span>
-                                       </div>
+                                 <div class="calendar-table__col">
+                                    <div class="calendar-table__item">
+                                       <span>10</span>
                                     </div>
                                  </div>
-                                 <div class="calendar-table__row">
-                                    <div class="calendar-table__col calendar-table__event calendar-table__event--long calendar-table__event--end">
-                                       <div class="calendar-table__item">
-                                          <span>28</span>
-                                       </div>
+                                 <div class="calendar-table__col">
+                                    <div class="calendar-table__item">
+                                       <span>11</span>
                                     </div>
-                                    <div class="calendar-table__col">
-                                       <div class="calendar-table__item">
-                                          <span>29</span>
-                                       </div>
+                                 </div>
+                                 <div class="calendar-table__col">
+                                    <div class="calendar-table__item">
+                                       <span>12</span>
                                     </div>
-                                    <div class="calendar-table__col">
-                                       <div class="calendar-table__item">
-                                          <span>30</span>
-                                       </div>
+                                 </div>
+                                 <div class="calendar-table__col">
+                                    <div class="calendar-table__item">
+                                       <span>13</span>
                                     </div>
-                                    <div class="calendar-table__col">
-                                       <div class="calendar-table__item">
-                                          <span>31</span>
-                                       </div>
+                                 </div>
+                              </div>
+                              <div class="calendar-table__row">
+                                 <div class="calendar-table__col">
+                                    <div class="calendar-table__item">
+                                       <span>14</span>
                                     </div>
-                                    <div class="calendar-table__col calendar-table__event calendar-table__inactive">
-                                       <div class="calendar-table__item">
-                                          <span>1</span>
-                                       </div>
+                                 </div>
+                                 <div class="calendar-table__col">
+                                    <div class="calendar-table__item">
+                                       <span>15</span>
                                     </div>
-                                    <div class="calendar-table__col calendar-table__inactive">
-                                       <div class="calendar-table__item">
-                                          <span>2</span>
-                                       </div>
+                                 </div>
+                                 <div
+                                    class="calendar-table__col calendar-table__event calendar-table__event--long calendar-table__event--start">
+                                    <div class="calendar-table__item">
+                                       <span>16</span>
                                     </div>
-                                    <div class="calendar-table__col calendar-table__inactive">
-                                       <div class="calendar-table__item">
-                                          <span>3</span>
-                                       </div>
+                                 </div>
+                                 <div class="calendar-table__col calendar-table__event calendar-table__event--long">
+                                    <div class="calendar-table__item">
+                                       <span>17</span>
+                                    </div>
+                                 </div>
+                                 <div
+                                    class="calendar-table__col calendar-table__event calendar-table__event--long calendar-table__event--end">
+                                    <div class="calendar-table__item">
+                                       <span>18</span>
+                                    </div>
+                                 </div>
+                                 <div class="calendar-table__col">
+                                    <div class="calendar-table__item">
+                                       <span>19</span>
+                                    </div>
+                                 </div>
+                                 <div class="calendar-table__col">
+                                    <div class="calendar-table__item">
+                                       <span>20</span>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="calendar-table__row">
+                                 <div class="calendar-table__col">
+                                    <div class="calendar-table__item">
+                                       <span>21</span>
+                                    </div>
+                                 </div>
+                                 <div class="calendar-table__col">
+                                    <div class="calendar-table__item">
+                                       <span>22</span>
+                                    </div>
+                                 </div>
+                                 <div class="calendar-table__col">
+                                    <div class="calendar-table__item">
+                                       <span>23</span>
+                                    </div>
+                                 </div>
+                                 <div class="calendar-table__col">
+                                    <div class="calendar-table__item">
+                                       <span>24</span>
+                                    </div>
+                                 </div>
+                                 <div class="calendar-table__col">
+                                    <div class="calendar-table__item">
+                                       <span>25</span>
+                                    </div>
+                                 </div>
+                                 <div class="calendar-table__col">
+                                    <div class="calendar-table__item">
+                                       <span>26</span>
+                                    </div>
+                                 </div>
+                                 <div
+                                    class="calendar-table__col calendar-table__event calendar-table__event--long calendar-table__event--start">
+                                    <div class="calendar-table__item">
+                                       <span>27</span>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="calendar-table__row">
+                                 <div
+                                    class="calendar-table__col calendar-table__event calendar-table__event--long calendar-table__event--end">
+                                    <div class="calendar-table__item">
+                                       <span>28</span>
+                                    </div>
+                                 </div>
+                                 <div class="calendar-table__col">
+                                    <div class="calendar-table__item">
+                                       <span>29</span>
+                                    </div>
+                                 </div>
+                                 <div class="calendar-table__col">
+                                    <div class="calendar-table__item">
+                                       <span>30</span>
+                                    </div>
+                                 </div>
+                                 <div class="calendar-table__col">
+                                    <div class="calendar-table__item">
+                                       <span>31</span>
+                                    </div>
+                                 </div>
+                                 <div class="calendar-table__col calendar-table__event calendar-table__inactive">
+                                    <div class="calendar-table__item">
+                                       <span>1</span>
+                                    </div>
+                                 </div>
+                                 <div class="calendar-table__col calendar-table__inactive">
+                                    <div class="calendar-table__item">
+                                       <span>2</span>
+                                    </div>
+                                 </div>
+                                 <div class="calendar-table__col calendar-table__inactive">
+                                    <div class="calendar-table__item">
+                                       <span>3</span>
                                     </div>
                                  </div>
                               </div>
                            </div>
                         </div>
                      </div>
-                  </main>
+                  </div>
+               </main>
+            </div>
+         </div>
+         <!-- search block-->
+         <div class="col-md-6 c-search-client__search-block">
+            <h2>Client existant</h2>
+            <div class="input-group">
+               <input class="form-control py-2 border-right-0" type="search" value="search" id="example-search-input">
+               <span class="input-group-append">
+                  <div class="input-group-text"><i class="fa fa-search"></i></div>
+               </span>
+            </div>
+
+            <!-- search result-->
+            <div class="u-flex-space-between c-search-client-search-block__result">
+               <div class="c-info-block">
+                  <div class="u-flex-center">
+                     <div class="o-picture-user"></div>
+                     <!--<img src="" alt="">-->
+                     <h3>Brahim ROMDHAN</h3>
+                  </div>
+                  <h4>example@mail.com</h4>
+                  <div>
+                     <span>24 ANS</span>
+                     <span>117CM</span>
+                     <span>117CM</span>
+                  </div>
+               </div>
+               <div>
+                  <div class="u-flex-center">
+                     <div class="u-flex-direcion-colum-center">
+                        <div>
+                           <img src="../img/male.svg" alt="">
+                        </div>
+                        <h5 class="u-uppercase">HOMME</h5>
+                     </div>
+                     <div class="u-flex-direcion-colum-center">
+                        <div>
+                           <img src="../img/male.svg" alt="">
+                        </div>
+                        <h5 class="u-uppercase">Sédentaire</h5>
+                     </div>
+                     <div class="u-flex-direcion-colum-center">
+                        <div>
+                           <img src="../img/male.svg" alt="">
+                        </div>
+                        <h5 class="u-uppercase">SECHE</h5>
+                     </div>
+                  </div>
                </div>
             </div>
-            <!-- search block-->
-            <div class="col-md-6 c-search-client__search-block">
-               <h2>Client existant</h2>
-               <div class="input-group">
-                  <input class="form-control py-2 border-right-0" type="search" value="search" id="example-search-input">
-                  <span class="input-group-append">
-                      <div class="input-group-text"><i class="fa fa-search"></i></div>
-                  </span>
-              </div>
-               
-               <!-- search result-->
-               <div class="u-flex-space-between c-search-client-search-block__result">
-                  <div class="c-info-block">
-                     <div class="u-flex-center">
-                        <div class="o-picture-user"></div>
-                        <!--<img src="" alt="">-->
-                        <h3>Brahim ROMDHAN</h3>
-                     </div>
-                     <h4>example@mail.com</h4>
-                     <div>
-                        <span>24 ANS</span>
-                        <span>117CM</span>
-                        <span>117CM</span>
-                     </div>
+            <div class="u-flex-space-between c-search-client-search-block__result">
+               <div class="c-info-block">
+                  <div class="u-flex-center">
+                     <div class="o-picture-user"></div>
+                     <!--<img src="" alt="">-->
+                     <h3>Brahim ROMDHAN</h3>
                   </div>
+                  <h4>example@mail.com</h4>
                   <div>
-                     <div class="u-flex-center">
-                        <div class="u-flex-direcion-colum-center">
-                           <div>
-                              <img src="../img/male.svg" alt="">
-                           </div>
-                           <h5 class="u-uppercase">HOMME</h5>
+                     <span>24 ANS</span>
+                     <span>117CM</span>
+                     <span>117CM</span>
+                  </div>
+               </div>
+               <div>
+                  <div class="u-flex-center">
+                     <div class="u-flex-direcion-colum-center">
+                        <div>
+                           <img src="../img/male.svg" alt="">
                         </div>
-                        <div class="u-flex-direcion-colum-center">
-                           <div>
-                              <img src="../img/male.svg" alt="">
-                           </div>
-                           <h5 class="u-uppercase">Sédentaire</h5>
+                        <h5 class="u-uppercase">HOMME</h5>
+                     </div>
+                     <div class="u-flex-direcion-colum-center">
+                        <div>
+                           <img src="../img/male.svg" alt="">
                         </div>
-                        <div class="u-flex-direcion-colum-center">
-                           <div>
-                              <img src="../img/male.svg" alt="">
-                           </div>
-                           <h5 class="u-uppercase">SECHE</h5>
+                        <h5 class="u-uppercase">Sédentaire</h5>
+                     </div>
+                     <div class="u-flex-direcion-colum-center">
+                        <div>
+                           <img src="../img/male.svg" alt="">
                         </div>
+                        <h5 class="u-uppercase">SECHE</h5>
                      </div>
                   </div>
                </div>
-               <div class="u-flex-space-between c-search-client-search-block__result">
-                  <div class="c-info-block">
-                     <div class="u-flex-center">
-                        <div class="o-picture-user"></div>
-                        <!--<img src="" alt="">-->
-                        <h3>Brahim ROMDHAN</h3>
-                     </div>
-                     <h4>example@mail.com</h4>
-                     <div>
-                        <span>24 ANS</span>
-                        <span>117CM</span>
-                        <span>117CM</span>
-                     </div>
+            </div>
+            <div class="u-flex-space-between c-search-client-search-block__result">
+               <div class="c-info-block">
+                  <div class="u-flex-center">
+                     <div class="o-picture-user"></div>
+                     <!--<img src="" alt="">-->
+                     <h3>Brahim ROMDHAN</h3>
                   </div>
+                  <h4>example@mail.com</h4>
                   <div>
-                     <div class="u-flex-center">
-                        <div class="u-flex-direcion-colum-center">
-                           <div>
-                              <img src="../img/male.svg" alt="">
-                           </div>
-                           <h5 class="u-uppercase">HOMME</h5>
+                     <span>24 ANS</span>
+                     <span>117CM</span>
+                     <span>117CM</span>
+                  </div>
+               </div>
+               <div>
+                  <div class="u-flex-center">
+                     <div class="u-flex-direcion-colum-center">
+                        <div>
+                           <img src="../img/male.svg" alt="">
                         </div>
-                        <div class="u-flex-direcion-colum-center">
-                           <div>
-                              <img src="../img/male.svg" alt="">
-                           </div>
-                           <h5 class="u-uppercase">Sédentaire</h5>
+                        <h5 class="u-uppercase">HOMME</h5>
+                     </div>
+                     <div class="u-flex-direcion-colum-center">
+                        <div>
+                           <img src="../img/male.svg" alt="">
                         </div>
-                        <div class="u-flex-direcion-colum-center">
-                           <div>
-                              <img src="../img/male.svg" alt="">
-                           </div>
-                           <h5 class="u-uppercase">SECHE</h5>
+                        <h5 class="u-uppercase">Sédentaire</h5>
+                     </div>
+                     <div class="u-flex-direcion-colum-center">
+                        <div>
+                           <img src="../img/male.svg" alt="">
                         </div>
+                        <h5 class="u-uppercase">SECHE</h5>
                      </div>
                   </div>
                </div>
-               <div class="u-flex-space-between c-search-client-search-block__result">
-                  <div class="c-info-block">
-                     <div class="u-flex-center">
-                        <div class="o-picture-user"></div>
-                        <!--<img src="" alt="">-->
-                        <h3>Brahim ROMDHAN</h3>
-                     </div>
-                     <h4>example@mail.com</h4>
-                     <div>
-                        <span>24 ANS</span>
-                        <span>117CM</span>
-                        <span>117CM</span>
-                     </div>
+            </div>
+            <div class="u-flex-space-between c-search-client-search-block__result">
+               <div class="c-info-block">
+                  <div class="u-flex-center">
+                     <div class="o-picture-user"></div>
+                     <!--<img src="" alt="">-->
+                     <h3>Brahim ROMDHAN</h3>
                   </div>
+                  <h4>example@mail.com</h4>
                   <div>
-                     <div class="u-flex-center">
-                        <div class="u-flex-direcion-colum-center">
-                           <div>
-                              <img src="../img/male.svg" alt="">
-                           </div>
-                           <h5 class="u-uppercase">HOMME</h5>
-                        </div>
-                        <div class="u-flex-direcion-colum-center">
-                           <div>
-                              <img src="../img/male.svg" alt="">
-                           </div>
-                           <h5 class="u-uppercase">Sédentaire</h5>
-                        </div>
-                        <div class="u-flex-direcion-colum-center">
-                           <div>
-                              <img src="../img/male.svg" alt="">
-                           </div>
-                           <h5 class="u-uppercase">SECHE</h5>
-                        </div>
-                     </div>
+                     <span>24 ANS</span>
+                     <span>117CM</span>
+                     <span>117CM</span>
                   </div>
                </div>
-               <div class="u-flex-space-between c-search-client-search-block__result">
-                  <div class="c-info-block">
-                     <div class="u-flex-center">
-                        <div class="o-picture-user"></div>
-                        <!--<img src="" alt="">-->
-                        <h3>Brahim ROMDHAN</h3>
+               <div>
+                  <div class="u-flex-center">
+                     <div class="u-flex-direcion-colum-center">
+                        <div>
+                           <img src="../img/male.svg" alt="">
+                        </div>
+                        <h5 class="u-uppercase">HOMME</h5>
                      </div>
-                     <h4>example@mail.com</h4>
-                     <div>
-                        <span>24 ANS</span>
-                        <span>117CM</span>
-                        <span>117CM</span>
+                     <div class="u-flex-direcion-colum-center">
+                        <div>
+                           <img src="../img/male.svg" alt="">
+                        </div>
+                        <h5 class="u-uppercase">Sédentaire</h5>
                      </div>
-                  </div>
-                  <div>
-                     <div class="u-flex-center">
-                        <div class="u-flex-direcion-colum-center">
-                           <div>
-                              <img src="../img/male.svg" alt="">
-                           </div>
-                           <h5 class="u-uppercase">HOMME</h5>
+                     <div class="u-flex-direcion-colum-center">
+                        <div>
+                           <img src="../img/male.svg" alt="">
                         </div>
-                        <div class="u-flex-direcion-colum-center">
-                           <div>
-                              <img src="../img/male.svg" alt="">
-                           </div>
-                           <h5 class="u-uppercase">Sédentaire</h5>
-                        </div>
-                        <div class="u-flex-direcion-colum-center">
-                           <div>
-                              <img src="../img/male.svg" alt="">
-                           </div>
-                           <h5 class="u-uppercase">SECHE</h5>
-                        </div>
+                        <h5 class="u-uppercase">SECHE</h5>
                      </div>
                   </div>
                </div>
             </div>
          </div>
-      </section>
-      <!-- jquery v-3.4.1 -->
-      <script src="../js/jquery-3.4.1.min.js"></script>
-      <!-- Bootstrap JS -->
-      <script src="../js/bootstrap.min.js"></script>
-   </body>
+      </div>
+   </section>
+   <!-- jquery v-3.4.1 -->
+   <script src="../js/jquery-3.4.1.min.js"></script>
+   <!-- Bootstrap JS -->
+   <script src="../js/bootstrap.min.js"></script>
+</body>
+
 </html>

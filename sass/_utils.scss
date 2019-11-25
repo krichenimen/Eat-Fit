@@ -1,27 +1,37 @@
 /**********************utils part css*******************/
-.u-flex{
+.u-flex {
     display: flex;
 }
 
-.u-flex-center{
+.u-flex-center {
     display: flex;
     align-items: center;
 }
 
-.u-flex-space-between{
+.u-flex-space-between {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.u-flex-direcion-colum-center{
+.u-flex-direcion-colum-center {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.u-uppercase{
+
+.u-uppercase {
     text-transform: uppercase;
 }
-.u-lowercase{
+
+.u-lowercase {
     text-transform: lowercase;
+}
+
+.u-scroll-y {
+    overflow-y: scroll;
+}
+
+.u-scroll-x {
+    overflow-x: scroll;
 }

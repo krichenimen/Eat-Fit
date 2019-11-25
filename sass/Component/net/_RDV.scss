@@ -1,45 +1,55 @@
 /**********************rdv part css*******************/
-
 .c-rendez-vous {
 	padding: 4.16rem 3.33rem 5.83rem;
 	background-color: $color-bg;
+
 	.c-rendez-vous__list {
 		padding: 10px;
 		margin: 0 auto;
+
 		button {
 			display: block;
 			padding: 10px;
 			width: 100%;
 			font-size: 1rem;
 		}
+
 		h2 {
 			font-size: 2.5rem;
 			padding: 2.5rem 0;
 		}
+
 		.c-rendez-vous-list__info {
 			margin-bottom: 1.66rem;
+
 			.c-rendez-vous-list-info__date {
+
 				p:nth-of-type(1),
 				p:nth-of-type(3) {
 					color: $color-text-light;
 					font-size: 1.16666667rem;
 				}
+
 				p:nth-of-type(2) {
 					color: $color-primary;
 					font-size: 2.5rem;
 				}
 			}
+
 			.c-rendez-vous-list-info__coordinate {
 				background-color: $color-white;
 				width: 90%;
 				padding: 0.83rem 1.66rem 2.5rem;
 				border-radius: 5px;
+
 				>div:nth-of-type(1) {
 					margin-bottom: 2rem;
+
 					span {
 						color: $color-text-light;
 					}
 				}
+
 				>div:nth-of-type(2) {
 					span {
 						font-size: 1.16rem;
@@ -50,37 +60,45 @@
 	}
 }
 
+/**********************search client part css*******************/
 .c-search-client {
 	padding: 4.16rem 3.33rem 5.83rem;
 	background-color: $color-bg;
+
 	.c-search-client__search-block {
 		h2 {
 			font-size: 2.5rem;
 			margin-bottom: 3.75rem;
 		}
+
 		.c-search-client-search-block__result {
 			background-color: $color-white;
 			border-radius: .312rem;
 			margin-top: 0.833rem;
 			padding: 1.5rem 4rem 1.33rem 1rem;
+
 			.c-info-block {
 				h3 {
 					font-size: 1.166rem;
 					font-weight: bold;
 					margin-left: 8px;
 				}
+
 				h4 {
 					color: $color-text-light;
 					font-size: 1rem;
 					margin-left: 34px;
+
 					&+div {
 						margin-left: 34px;
+
 						span {
 							color: $color-primary;
 							font-size: 0.83rem;
 						}
 					}
 				}
+
 				.o-picture-user {
 					width: 26px;
 					height: 26px;
@@ -88,17 +106,22 @@
 					border-radius: 50px;
 				}
 			}
+
 			.u-flex-direcion-colum-center {
 				margin-left: 5.25rem;
-				@media screen and (min-width: 1000px) and (max-width: 1230px){
+
+				@media screen and (min-width: 1000px) and (max-width: 1230px) {
 					margin-left: 3.25rem;
 				}
-				@media screen and (max-width: 1000px){
+
+				@media screen and (max-width: 1000px) {
 					margin-left: 1rem;
 				}
-				@media screen and (min-width: 768px) and (max-width: 800px){
+
+				@media screen and (min-width: 768px) and (max-width: 800px) {
 					margin-left: .2rem;
 				}
+
 				>div {
 					background-color: $color-primary;
 					width: 25px;
@@ -108,13 +131,15 @@
 				}
 			}
 		}
+
 		input {
 			border-radius: .312rem;
 			border: 0 none !important;
 			padding: 1.9rem 0 1.9rem 1.25rem !important;
 			font-size: 1.33rem;
 		}
-		.input-group-text{
+
+		.input-group-text {
 			border: 0;
 			background-color: $color-white;
 			padding-right: 1.25rem;
@@ -123,6 +148,15 @@
 		}
 	}
 }
+
+/**********************create client part css*******************/
+.c-create-client {
+	h2 {
+		font-size: 2.5rem;
+		margin-bottom: 3.75rem;
+	}
+}
+
 
 .c-calendar {
 	//Text
@@ -137,7 +171,7 @@
 	$yellow: #FDCA40;
 	$green: #86D8C9;
 	//Color Palette
-	$palettes: ( gray-shades: ( darker: #9FAAB7, base: #99A4AE, light: #DCDCE3, lighter: #BEC1CA, lightest: #F2F6F8));
+	$palettes: (gray-shades: (darker: #9FAAB7, base: #99A4AE, light: #DCDCE3, lighter: #BEC1CA, lightest: #F2F6F8));
 	// Color usages
 	$main-background-color: #F8FAFA;
 	$calendar-item-border: #FEFEFE;
@@ -154,9 +188,11 @@
 	$font-weight--regular: 400;
 	//Color Usage
 	$primary-color: $green;
+
 	@function palette($palette, $shade: base) {
 		@return map-get(map-get($palettes, $palette), $shade);
 	}
+
 	// Retrieved from https://github.com/sshikhrakar/Sass-Starter/
 	// BEM(Block Element Modifier) Naming Convention
 	// For Element
@@ -167,6 +203,7 @@
 			@content;
 		}
 	}
+
 	// For Modifier
 	// $modifier  - Just the modifier name for the parent block or element
 	// @usage     - `.Nav {@include e(item) {@include m(active) {...}}}`
@@ -175,6 +212,7 @@
 			@content;
 		}
 	}
+
 	// Media Query
 	@mixin mq($break) {
 		@if type-of($break)=='number' {
@@ -182,21 +220,25 @@
 				@content;
 			}
 		}
+
 		@else {
 			@error "No value could be retrieved for '#{$break}'";
 		}
 	}
+
 	.main-container-wrapper {
 		background-color: $main-background-color;
 		min-width: 320px;
 		max-width: 575px;
 		overflow-y: auto;
+
 		@include mq(415) {
 			-moz-box-shadow: 0px 32px 47px rgba(32, 23, 23, 0.09);
 			-webkit-box-shadow: 0px 32px 47px rgba(32, 23, 23, 0.09);
 			box-shadow: 0px 32px 47px rgba(32, 23, 23, 0.09);
 		}
 	}
+
 	header {
 		background-color: $white;
 		display: flex;
@@ -205,6 +247,7 @@
 		overflow: hidden;
 		position: relative;
 	}
+
 	.header {
 		@include e(btn) {
 			background-color: $primary-color;
@@ -219,20 +262,24 @@
 			position: absolute;
 			top: -25px;
 			width: 80px;
+
 			&:hover,
 			&:focus {
 				background: darken($primary-color, 8%);
 				transition: all 0.3s ease-in;
 				outline: none;
 			}
+
 			.icon {
 				display: inline-block;
 			}
+
 			@include m(left) {
 				left: -25px;
 				padding-left: 38px;
 				text-align: left;
 			}
+
 			@include m(right) {
 				padding-right: 32px;
 				right: -25px;
@@ -240,14 +287,17 @@
 			}
 		}
 	}
+
 	.calendar-container {
 		background-color: $white;
 		padding: 16px;
 		margin-bottom: 24px;
+
 		@include e(header) {
 			display: flex;
 			justify-content: space-between;
 		}
+
 		@include e(btn) {
 			background: transparent;
 			border: 0;
@@ -255,21 +305,25 @@
 			font-size: 16px;
 			outline: none;
 			color: $calendar-button-color;
+
 			&:hover,
 			&:focus {
 				color: palette(gray-shades, darker);
 				transition: all 0.3s ease-in;
 			}
 		}
+
 		@include e(title) {
 			color: $black;
 			font-size: $lg-font-size;
 			font-weight: $font-weight--bold;
 		}
 	}
+
 	.calendar-table {
 		margin-top: 12px;
 		width: 100%;
+
 		@include e(item) {
 			border: 2px solid transparent;
 			border-radius: 50%;
@@ -282,6 +336,7 @@
 			align-items: center;
 			justify-content: center;
 			cursor: pointer;
+
 			&:hover {
 				background: #f8fafa;
 				-moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
@@ -290,13 +345,16 @@
 				transition: 0.2s all ease-in;
 			}
 		}
+
 		@include e(row) {
 			display: flex;
 			justify-content: center;
 		}
+
 		@include e(header) {
 			border-bottom: 2px solid palette(gray-shades, lightest);
 			margin-bottom: 4px;
+
 			.calendar-table__col {
 				display: inline-block;
 				color: $gray;
@@ -307,29 +365,35 @@
 				text-transform: uppercase;
 				width: 40px;
 				height: 38px;
+
 				@include mq(360) {
 					width: 46px;
 				}
+
 				@include mq(410) {
 					width: 54px;
 				}
 			}
 		}
+
 		@include e(body) {
 			.calendar-table__col {
 				width: 40px;
 				height: 42px;
 				padding-bottom: 2px;
+
 				@include mq(360) {
 					width: 46px;
 					height: 48px;
 				}
+
 				@include mq(410) {
 					width: 54px;
 					height: 56px;
 				}
 			}
 		}
+
 		@include e(today) {
 			.calendar-table__item {
 				border-color: $calendar-item-border;
@@ -339,6 +403,7 @@
 				box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
 			}
 		}
+
 		@include e(event) {
 			.calendar-table__item {
 				background-color: $black;
@@ -348,29 +413,35 @@
 				box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
 				color: $white;
 			}
+
 			@include m(long) {
 				overflow-x: hidden;
+
 				.calendar-table__item {
 					border-radius: 0;
 					border-width: 2px 0;
 				}
 			}
+
 			@include m(start) {
 				.calendar-table__item {
 					border-left: 2px solid $white;
 					border-radius: 50% 0 0 50%;
 				}
+
 				&.calendar-table__col:last-child {
 					.calendar-table__item {
 						border-width: 2px;
 					}
 				}
 			}
+
 			@include m(end) {
 				.calendar-table__item {
 					border-right: 2px solid $white;
 					border-radius: 0 50% 50% 0;
 				}
+
 				&.calendar-table__col:first-child {
 					.calendar-table__item {
 						border-width: 2px;
@@ -378,19 +449,23 @@
 				}
 			}
 		}
+
 		@include e(inactive) {
 			.calendar-table__item {
 				color: palette(gray-shades, light);
 				cursor: default;
+
 				&:hover {
 					background: transparent;
 					box-shadow: none;
 				}
 			}
+
 			&.calendar-table__event {
 				.calendar-table__item {
 					color: $white;
 					opacity: 0.25;
+
 					&:hover {
 						background: $black;
 						-moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
@@ -401,9 +476,11 @@
 			}
 		}
 	}
+
 	.events-container {
 		padding: 0 15px;
 	}
+
 	.events {
 		@include e(title) {
 			color: palette(gray-shades, lighter);
@@ -412,6 +489,7 @@
 			font-weight: $font-weight--semi-bold;
 			margin-bottom: 16px;
 		}
+
 		@include e(tag) {
 			background: $black;
 			border: 2px solid $calendar-item-border;
@@ -426,10 +504,12 @@
 			margin-left: 16px;
 			padding: 5px 2px;
 			text-align: center;
+
 			@include m(highlighted) {
 				background: $yellow;
 			}
 		}
+
 		@include e(item) {
 			background: $white;
 			border-left: 8px solid $primary-color;
@@ -442,10 +522,12 @@
 			justify-content: space-between;
 			align-items: center;
 			margin-bottom: 16px;
+
 			@include m(left) {
 				width: calc(100% - 76px);
 			}
 		}
+
 		@include e(name) {
 			font-size: $sm-font-size;
 			font-weight: $font-weight--bold;
@@ -453,6 +535,7 @@
 			display: block;
 			margin-bottom: 6px;
 		}
+
 		@include e(date) {
 			font-size: $sm-font-size;
 			color: palette(gray-shades, darker);

@@ -1,14 +1,16 @@
 /**********************header part css*******************/
-header{
+header {
     padding: 1rem 3.33rem;
 }
-nav{
-    a{
+
+nav {
+    a {
         color: $color-nav;
         font-size: 1rem;
         line-height: 14px;
         margin-right: 0.833rem;
-        &:hover{
+
+        &:hover {
             color: $color-nav-hover;
             text-decoration: none;
         }
