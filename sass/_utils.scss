@@ -20,6 +20,12 @@
     align-items: center;
 }
 
+.u-center-justify-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .u-uppercase {
     text-transform: uppercase;
 }

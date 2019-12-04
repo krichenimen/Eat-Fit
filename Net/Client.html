@@ -193,108 +193,150 @@
          </div>
          <div class="col-md-6 c-create-client">
             <h2>Créer un nouveau client</h2>
-            <div class=" u-scroll-y">
-               <form class="row">
-                  <div class="col-md-6 pl-0">
-                     <div class="form-group">
-                        <label for="InputNom">Nom: </label>
-                        <input type="text" class="form-control" id="InputNom" aria-describedby="emailHelp"
-                           placeholder="Entrer le nom">
-                     </div>
-                     <div class="form-group">
-                        <label for="InputEmail">Adresse email:</label>
-                        <input type="email" class="form-control" id="InputEmail" placeholder="Entrer l'email">
-                     </div>
-                     <div>
-                        <label for="InputEmail">Gender</label>
-                        <div class="u-flex-center o-input-check">
-                           <fieldset>
-                              <input type='radio' name='gender' value='valuable' id="male" />
-                              <label for="male">
-                                 <div class="o-checkbox-image"></div>
-                                 <div></div>
-                              </label>
-                           </fieldset>
-                           <fieldset>
-                              <input type='radio' name='gender' value='valuable' id="female" />
-                              <label for="female">
-                                 <div class="o-checkbox-image"></div>
-                                 <div></div>
-                              </label>
-                           </fieldset>
+            <div class="u-scroll-y">
+               <form>
+                  <div class="row">
+                     <div class="col-md-6 pl-0">
+                        <div class="form-group">
+                           <label for="InputNom">Nom: </label>
+                           <input type="text" class="form-control" id="InputNom" aria-describedby="emailHelp"
+                              placeholder="Entrer le nom">
+                        </div>
+                        <div class="form-group">
+                           <label for="InputEmail">Adresse email:</label>
+                           <input type="email" class="form-control" id="InputEmail" placeholder="Entrer l'email">
+                        </div>
+                        <div>
+                           <label for="InputEmail">Gender</label>
+                           <div class="u-flex-center o-input-check">
+                              <fieldset>
+                                 <input type='radio' name='gender' value='valuable' id="male" />
+                                 <label for="male">
+                                    <div class="o-checkbox-image"></div>
+                                    <div></div>
+                                 </label>
+                              </fieldset>
+                              <fieldset>
+                                 <input type='radio' name='gender' value='valuable' id="female" />
+                                 <label for="female">
+                                    <div class="o-checkbox-image"></div>
+                                    <div></div>
+                                 </label>
+                              </fieldset>
+                           </div>
                         </div>
                      </div>
-                  </div>
-                  <div class="col-md-6 pr-0 ">
-                     <div class="form-group">
-                        <label for="InputPrenom">Prénom:</label>
-                        <input type="text" class="form-control" id="InputPrenom" placeholder="Entrer le prénom">
-                     </div>
-                     <div class="form-group">
-                        <label for="InputMDP">Mot de passe:</label>
-                        <input type="password" class="form-control" id="InputMDP" placeholder="Entrer le mot de passe">
-                     </div>
-                     <div>
-                        <label for="InputEmail">Gender</label>
-                        <div class="u-flex-center o-input-check">
-                           <fieldset>
-                              <input type='checkbox' name='test' value='valuable' id="test" />
-                              <label for="test">
-                                 <div class="o-checkbox-image"></div>
-                                 <div></div>
-                              </label>
-                           </fieldset>
-                           <fieldset>
-                              <input type='checkbox' name='test1' value='valuable' id="test1" />
-                              <label for="test1">
-                                 <div class="o-checkbox-image"></div>
-                                 <div></div>
-                              </label>
-                           </fieldset>
-                           <fieldset>
-                              <input type='checkbox' name='test2' value='valuable' id="test2" />
-                              <label for="test2">
-                                 <div class="o-checkbox-image"></div>
-                                 <div></div>
-                              </label>
-                           </fieldset>
+                     <div class="col-md-6 pr-0 ">
+                        <div class="form-group">
+                           <label for="InputPrenom">Prénom:</label>
+                           <input type="text" class="form-control" id="InputPrenom" placeholder="Entrer le prénom">
                         </div>
-                     </div>
-                  </div>
-                  <div>
-                     <label for="InputEmail">Gender</label>
-                     <div class="u-flex-center o-input-check">
-                        <fieldset>
-                           <input type='checkbox' name='test3' value='valuable' id="test3" />
-                           <label for="test3">
-                              <div class="o-checkbox-image"></div>
-                              <div></div>
-                           </label>
-                        </fieldset>
-                        <fieldset>
-                           <input type='checkbox' name='test4' value='valuable' id="test4" />
-                           <label for="test4">
-                              <div class="o-checkbox-image"></div>
-                              <div></div>
-                           </label>
-                        </fieldset>
-                        <fieldset>
-                           <input type='checkbox' name='test5' value='valuable' id="test5" />
-                           <label for="test5">
-                              <div class="o-checkbox-image"></div>
-                              <div></div>
-                           </label>
-                        </fieldset>
+                        <div class="form-group">
+                           <label for="InputMDP">Mot de passe:</label>
+                           <input type="password" class="form-control" id="InputMDP"
+                              placeholder="Entrer le mot de passe">
+                        </div>
+                        <div>
+                           <label for="InputEmail">Gender</label>
+                           <div class="u-flex-center o-input-check">
+                              <fieldset>
+                                 <input type='checkbox' name='test' value='valuable' id="test" />
+                                 <label for="test">
+                                    <div class="o-checkbox-image"></div>
+                                    <div></div>
+                                 </label>
+                              </fieldset>
+                              <fieldset>
+                                 <input type='checkbox' name='test1' value='valuable' id="test1" />
+                                 <label for="test1">
+                                    <div class="o-checkbox-image"></div>
+                                    <div></div>
+                                 </label>
+                              </fieldset>
+                              <fieldset>
+                                 <input type='checkbox' name='test2' value='valuable' id="test2" />
+                                 <label for="test2">
+                                    <div class="o-checkbox-image"></div>
+                                    <div></div>
+                                 </label>
+                              </fieldset>
+                           </div>
+                        </div>
                      </div>
                   </div>
                </form>
+               <div>
+                  <label>Gender</label>
+                  <div class="u-flex-center o-input-check">
+                     <fieldset>
+                        <input type='checkbox' name='test3' value='valuable' id="test3" />
+                        <label for="test3">
+                           <div class="o-checkbox-image"></div>
+                           <div></div>
+                        </label>
+                     </fieldset>
+                     <fieldset>
+                        <input type='checkbox' name='test4' value='valuable' id="test4" />
+                        <label for="test4">
+                           <div class="o-checkbox-image"></div>
+                           <div></div>
+                        </label>
+                     </fieldset>
+                     <fieldset>
+                        <input type='checkbox' name='test5' value='valuable' id="test5" />
+                        <label for="test5">
+                           <div class="o-checkbox-image"></div>
+                           <div></div>
+                        </label>
+                     </fieldset>
+                  </div>
+               </div>
+               <div>
+                  <label>Fréquence sportive</label>
+                  <div class="u-flex-center">
+                     <div>
+                        <div class="u-center-justify-center c-frequence-sportive-items">
+                           <img src="../img/image-45x60.png" alt="">
+                        </div>
+                        <div class="form-group">
+                           <input type="text" class="form-control" id="InputPrenom" placeholder="AGE"
+                              style="text-align: center">
+                        </div>
+                     </div>
+                     <div>
+                        <div class=" u-center-justify-center c-frequence-sportive-items">
+                           <img src="../img/image-45x60.png" alt="">
+                        </div>
+                        <div class="form-group">
+                           <input type="text" class="form-control" id="InputPrenom" placeholder="TAILLE"
+                              style="text-align: center">
+                        </div>
+                     </div>
+                     <div>
+                        <div class="u-center-justify-center c-frequence-sportive-items">
+                           <img src="../img/image-45x60.png" alt="">
+                        </div>
+                        <div class="form-group">
+                           <input type="text" class="form-control" id="InputPrenom" placeholder="POIDS"
+                              style="text-align: center">
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="c-calories-input text-center">
+                  <h3>Veuillez saisir le nombre de calories :</h3>
+                  <input type="text" value="1800">
+                  <div>
+                     <button class="btn btn-primary u-uppercase">Choisir une formule</button>
+                     <button class="btn btn-primary u-uppercase">Suivant</button>
+                  </div>
+               </div>
             </div>
          </div>
       </div>
    </section>
    <!-- jquery v-3.4.1 -->
-   <script src="../js/jquery-3.4.1.min.js"></script>
-   <!-- Bootstrap JS -->
+   <script src=" ../js/jquery-3.4.1.min.js"> </script> <!-- Bootstrap JS -->
    <script src="../js/bootstrap.min.js"></script>
 </body>
 
