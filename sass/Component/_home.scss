@@ -1,0 +1,165 @@
+/**********************home part css*******************/
+.bg-home {
+    background-color: $color-bg-home;
+}
+
+.bg-home-secondary {
+    background-color: $color-bg-home-secondary;
+}
+
+.c-home {
+    .c-presentation {
+        h2 {
+            color: $color-title;
+            font-size: 2.5rem;
+            font-weight: 300;
+        }
+
+        span {
+            opacity: 0.67;
+            font-size: 1.5rem;
+            margin: 2rem 0;
+            font-weight: 300;
+            margin: 1rem 0;
+            display: inline-block;
+        }
+
+        button {
+            margin: 3rem 0 5rem;
+            padding: 1rem 5rem;
+            font-size: 1.3rem;
+        }
+
+        i {
+            color: $color-primary-home;
+            margin-right: 1rem;
+        }
+    }
+
+    .c-CCM {
+        h2 {
+            color: $color-title;
+            text-align: center;
+            font-size: 2rem;
+            padding: 3rem 0;
+        }
+    }
+
+    .c-concept {
+        h2 {
+            color: $color-title;
+            text-align: center;
+            font-size: 2rem;
+            padding: 3rem 0;
+        }
+
+        h3 {
+            color: $color-nav-hover;
+            font-size: 2rem;
+        }
+
+        p {
+            color: $color-section;
+            font-size: 1.5rem;
+        }
+
+        img {
+            width: 400px;
+        }
+    }
+
+    .c-summary {
+        h2 {
+            color: $color-primary-home;
+            text-align: center;
+            font-size: 3.75rem;
+            padding: 3rem 0;
+        }
+
+        img {
+            width: 352px;
+            height: 352px;
+            box-shadow: 0 0 61px 0 rgba(0, 0, 0, 0);
+            border: solid 21px #fcfcfc;
+            border-radius: 300px;
+        }
+
+        .c-summary__description {
+            text-align: center;
+
+            h3 {
+                color: $color-title;
+                font-size: 2.5rem;
+            }
+
+            p {
+                color: $color-section;
+                font-size: 1.5rem;
+                width: 320px;
+            }
+        }
+    }
+
+    .c-summary-result {
+        h2 {
+            color: black;
+            opacity: 0.11;
+            text-align: center;
+            font-size: 3.75rem;
+            padding: 3rem 0;
+        }
+
+        h3 {
+            font-size: 1.66rem;
+            color: $color-title;
+            margin-top: 2.5rem;
+            margin-bottom: 1.66rem;
+        }
+
+        p {
+            color: $color-section;
+            font-size: 1.5rem;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 80%;
+        }
+
+        hr {
+            margin: 0;
+            height: 6px;
+            background-color: $color-primary-home;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 40%;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    .c-summary-result-second-part {
+        h2 {
+            color: black;
+            opacity: 0.11;
+            text-align: center;
+            font-size: 3.75rem;
+            padding: 3rem 0;
+        }
+
+        h3 {
+            font-size: 1.66rem;
+            color: $color-title;
+            margin-top: 2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        p {
+            color: $color-section;
+            font-size: 1.5rem;
+        }
+    }
+}

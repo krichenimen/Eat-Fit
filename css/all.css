@@ -1,6 +1,12 @@
+/* home colors*/
 html {
   font-size: 12px;
   color: #000;
+}
+
+body {
+  font-family: "Renner", sans-serif;
+  font-weight: 400;
 }
 
 .row,
@@ -77,6 +83,26 @@ html {
   margin: 0;
 }
 
+/* fonts */
+/*renner */
+@font-face {
+  font-family: "Renner";
+  src: url("../fonts/Renner_ 400 Book.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Renner";
+  src: url("../fonts/Renner_ 500 Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Renner";
+  src: url("../fonts/Renner_ 700 Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
 /**********************utils part css*******************/
 .u-flex {
   display: flex;
@@ -85,6 +111,11 @@ html {
 .u-flex-center {
   display: flex;
   align-items: center;
+}
+
+.u-flex-justify-center {
+  display: flex;
+  justify-content: center;
 }
 
 .u-flex-space-between {
@@ -126,11 +157,47 @@ html {
   overflow-x: scroll;
 }
 
+.mt-6 {
+  margin-top: 7rem;
+}
+
+.mr-7 {
+  margin-right: 7rem;
+}
+
+.ml-7 {
+  margin-left: 7rem;
+}
+
+.pr-7 {
+  padding-right: 7rem;
+}
+
+.pl-7 {
+  padding-left: 7rem;
+}
+
 /**********************button part css*******************/
 .btn-primary {
   background-color: #000;
   border-color: #000;
   border-radius: 5px;
+  font-size: 1rem;
+}
+
+/* remove 1 if this color been the promary color or remove all 1 in html and remove this block */
+.btn-primary-1 {
+  background-color: #a1c798;
+  border-color: #a1c798;
+  color: #56745b;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.btn-secondary {
+  background-color: transparent;
+  border: none;
+  color: #707070;
   font-size: 1rem;
 }
 
@@ -210,7 +277,151 @@ nav a:hover {
   text-decoration: none;
 }
 
+@media (min-width: 992px) {
+  .c-home .navbar-expand-lg .navbar-collapse {
+    display: block !important;
+    flex-grow: 0;
+  }
+}
+.c-home .nav-item {
+  color: #707070;
+}
+.c-home .c-CCM-nav {
+  color: #56745b;
+}
+
 /**********************footer part css*******************/
+/**********************home part css*******************/
+.bg-home {
+  background-color: #f2f8f9;
+}
+
+.bg-home-secondary {
+  background-color: rgba(158, 186, 208, 0.07);
+}
+
+.c-home .c-presentation h2 {
+  color: #1d265c;
+  font-size: 2.5rem;
+  font-weight: 300;
+}
+.c-home .c-presentation span {
+  opacity: 0.67;
+  font-size: 1.5rem;
+  margin: 2rem 0;
+  font-weight: 300;
+  margin: 1rem 0;
+  display: inline-block;
+}
+.c-home .c-presentation button {
+  margin: 3rem 0 5rem;
+  padding: 1rem 5rem;
+  font-size: 1.3rem;
+}
+.c-home .c-presentation i {
+  color: #a1c798;
+  margin-right: 1rem;
+}
+.c-home .c-CCM h2 {
+  color: #1d265c;
+  text-align: center;
+  font-size: 2rem;
+  padding: 3rem 0;
+}
+.c-home .c-concept h2 {
+  color: #1d265c;
+  text-align: center;
+  font-size: 2rem;
+  padding: 3rem 0;
+}
+.c-home .c-concept h3 {
+  color: #56745b;
+  font-size: 2rem;
+}
+.c-home .c-concept p {
+  color: #4f5051;
+  font-size: 1.5rem;
+}
+.c-home .c-concept img {
+  width: 400px;
+}
+.c-home .c-summary h2 {
+  color: #a1c798;
+  text-align: center;
+  font-size: 3.75rem;
+  padding: 3rem 0;
+}
+.c-home .c-summary img {
+  width: 352px;
+  height: 352px;
+  box-shadow: 0 0 61px 0 rgba(0, 0, 0, 0);
+  border: solid 21px #fcfcfc;
+  border-radius: 300px;
+}
+.c-home .c-summary .c-summary__description {
+  text-align: center;
+}
+.c-home .c-summary .c-summary__description h3 {
+  color: #1d265c;
+  font-size: 2.5rem;
+}
+.c-home .c-summary .c-summary__description p {
+  color: #4f5051;
+  font-size: 1.5rem;
+  width: 320px;
+}
+.c-home .c-summary-result h2 {
+  color: black;
+  opacity: 0.11;
+  text-align: center;
+  font-size: 3.75rem;
+  padding: 3rem 0;
+}
+.c-home .c-summary-result h3 {
+  font-size: 1.66rem;
+  color: #1d265c;
+  margin-top: 2.5rem;
+  margin-bottom: 1.66rem;
+}
+.c-home .c-summary-result p {
+  color: #4f5051;
+  font-size: 1.5rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+.c-home .c-summary-result hr {
+  margin: 0;
+  height: 6px;
+  background-color: #a1c798;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
+.c-home .c-summary-result img {
+  width: 100%;
+  height: auto;
+}
+.c-home .c-summary-result-second-part h2 {
+  color: black;
+  opacity: 0.11;
+  text-align: center;
+  font-size: 3.75rem;
+  padding: 3rem 0;
+}
+.c-home .c-summary-result-second-part h3 {
+  font-size: 1.66rem;
+  color: #1d265c;
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+}
+.c-home .c-summary-result-second-part p {
+  color: #4f5051;
+  font-size: 1.5rem;
+}
+
 /**********************rdv part css*******************/
 .c-rendez-vous {
   padding: 4.16rem 3.33rem 5.83rem;
@@ -512,6 +723,23 @@ nav a:hover {
 }
 .c-calendar .datepicker--days-names {
   margin: 8px 0 30px;
+}
+
+/**********************intro part css*******************/
+.c-quiz-loading {
+  background-color: #f2f6f9;
+}
+.c-quiz-loading h3 {
+  color: #707070;
+  font-size: 1rem;
+  position: absolute;
+  top: 0px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  text-align: center;
+  height: 0;
 }
 
 /*# sourceMappingURL=all.css.map */

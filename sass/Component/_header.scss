@@ -16,3 +16,20 @@ nav {
         }
     }
 }
+
+.c-home {
+    .navbar-expand-lg .navbar-collapse {
+        @media (min-width: 992px) {
+            display: block !important;
+            flex-grow: 0;
+        }
+    }
+
+    .nav-item {
+        color: $color-nav;
+    }
+
+    .c-CCM-nav {
+        color: $color-nav-hover;
+    }
+}

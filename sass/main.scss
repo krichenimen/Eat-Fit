@@ -6,6 +6,11 @@ html {
     color: $color-primary;
 }
 
+body {
+    font-family: "Renner", sans-serif;
+    font-weight: 400;
+}
+
 .row,
 .col,
 .col-1,
@@ -78,6 +83,31 @@ html {
 .col-xl-9,
 .col-xl-auto {
     margin: 0;
+}
+
+
+/* fonts */
+
+/*renner */
+@font-face {
+    font-family: 'Renner';
+    src: url('../fonts/Renner_ 400 Book.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Renner';
+    src: url('../fonts/Renner_ 500 Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Renner';
+    src: url('../fonts/Renner_ 700 Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
 }
 
 // mixin scss

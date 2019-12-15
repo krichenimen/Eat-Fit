@@ -5,3 +5,19 @@
     border-radius: 5px;
     font-size: 1rem;
 }
+
+/* remove 1 if this color been the promary color or remove all 1 in html and remove this block */
+.btn-primary-1 {
+    background-color: $color-primary-home;
+    border-color: $color-primary-home;
+    color: $color-nav-hover;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.btn-secondary {
+    background-color: transparent;
+    border: none;
+    color: $color-nav;
+    font-size: 1rem;
+}

@@ -8,6 +8,11 @@
     align-items: center;
 }
 
+.u-flex-justify-center {
+    display: flex;
+    justify-content: center;
+}
+
 .u-flex-space-between {
     display: flex;
     align-items: center;
@@ -45,4 +50,24 @@
 
 .u-scroll-x {
     overflow-x: scroll;
+}
+
+.mt-6 {
+    margin-top: 7rem;
+}
+
+.mr-7 {
+    margin-right: 7rem;
+}
+
+.ml-7 {
+    margin-left: 7rem;
+}
+
+.pr-7 {
+    padding-right: 7rem;
+}
+
+.pl-7 {
+    padding-left: 7rem;
 }
