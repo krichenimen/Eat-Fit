@@ -1,0 +1,44 @@
+/**********************intro part css*******************/
+.c-quiz-loading {
+    background-color: $color-bg;
+
+    h3 {
+        color: $color-nav;
+        font-size: 1rem;
+        position: absolute;
+        top: 0px;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        text-align: center;
+        height: 0;
+    }
+}
+
+.c-quiz-gender {
+    footer {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        max-width: 345px;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .c-progressbar {
+        background-color: black;
+        border-radius: 13px;
+        /* (height of inner div) / 2 + padding */
+        padding: 3px;
+    }
+
+    .c-progressbar>div {
+        background-color: orange;
+        width: 40%;
+        /* Adjust with JavaScript */
+        height: 20px;
+        border-radius: 10px;
+    }
+}

@@ -742,4 +742,27 @@ nav a:hover {
   height: 0;
 }
 
+.c-quiz-gender footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  max-width: 345px;
+  display: block;
+  margin: 0 auto;
+}
+.c-quiz-gender .c-progressbar {
+  background-color: black;
+  border-radius: 13px;
+  /* (height of inner div) / 2 + padding */
+  padding: 3px;
+}
+.c-quiz-gender .c-progressbar > div {
+  background-color: orange;
+  width: 40%;
+  /* Adjust with JavaScript */
+  height: 20px;
+  border-radius: 10px;
+}
+
 /*# sourceMappingURL=all.css.map */
