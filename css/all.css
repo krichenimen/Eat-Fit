@@ -261,6 +261,39 @@ input[type=radio]:checked + label div:nth-of-type(2) {
   color: black;
 }
 
+/* square form */
+.o-input-radio--square input[type=checkbox] + label,
+.o-input-radio--square input[type=radio] + label {
+  background-color: transparent;
+  height: 150px;
+  width: 163px;
+  border-radius: 5px;
+  border: 3px solid #000;
+  cursor: pointer;
+}
+.o-input-radio--square input[type=checkbox]:checked + label,
+.o-input-radio--square input[type=radio]:checked + label {
+  background-color: #000;
+  height: 150px;
+  width: 163px;
+  border-radius: 5px;
+  border: 3px solid #000;
+  cursor: pointer;
+}
+.o-input-radio--square input[type=checkbox] + label h5,
+.o-input-radio--square input[type=radio] + label h5 {
+  color: #000;
+  opacity: 0.67;
+}
+.o-input-radio--square input[type=checkbox]:checked + label h5,
+.o-input-radio--square input[type=radio]:checked + label h5 {
+  color: white;
+}
+.o-input-radio--square h5 {
+  font-size: 0.875rem;
+  padding-top: 50px;
+}
+
 /**********************header part css*******************/
 header {
   padding: 1rem 3.33rem;
@@ -742,27 +775,110 @@ nav a:hover {
   height: 0;
 }
 
+/* progress bar */
+.c-progressbar {
+  background-color: #ededed;
+  border-radius: 13px;
+  padding: 1px;
+  margin-bottom: 10%;
+}
+
+.c-progressbar > div {
+  background-color: #000;
+  width: 10%;
+  /* Adjust with JavaScript */
+  height: 5px;
+  border-radius: 5px;
+}
+
+/**********************gender part css*******************/
+.c-quiz-gender {
+  background-color: #f2f6f9;
+}
+.c-quiz-gender h1 {
+  font-size: 1.5rem;
+  margin-top: 26%;
+  margin-bottom: 8%;
+}
+.c-quiz-gender .c-quiz-gender-container {
+  max-width: 345px;
+  display: block;
+  margin: 0 auto;
+  padding-bottom: 15.4%;
+  overflow: hidden;
+}
+@media screen and (max-width: 970px) {
+  .c-quiz-gender .c-quiz-gender-container {
+    padding-bottom: 25%;
+  }
+}
+@media screen and (max-width: 970px) {
+  .c-quiz-gender .c-quiz-gender-container {
+    padding-bottom: 29%;
+  }
+}
 .c-quiz-gender footer {
+  background-color: #f2f6f9;
   position: fixed;
   bottom: 0;
   left: 0;
   right: 0;
+}
+.c-quiz-gender footer > div {
   max-width: 345px;
   display: block;
   margin: 0 auto;
 }
-.c-quiz-gender .c-progressbar {
-  background-color: black;
-  border-radius: 13px;
-  /* (height of inner div) / 2 + padding */
-  padding: 3px;
+.c-quiz-gender footer button {
+  margin: 0 auto;
+  padding: 2% 45%;
+  display: block;
+  margin-bottom: 10%;
 }
-.c-quiz-gender .c-progressbar > div {
-  background-color: orange;
-  width: 40%;
-  /* Adjust with JavaScript */
-  height: 20px;
-  border-radius: 10px;
+
+/**********************objectif part css*******************/
+.c-quiz-objectif {
+  background-color: #f2f6f9;
+}
+.c-quiz-objectif h1 {
+  font-size: 1.5rem;
+  margin-top: 14%;
+  margin-bottom: 8%;
+}
+.c-quiz-objectif .c-quiz-objectif-container {
+  max-width: 534px;
+  display: block;
+  margin: 0 auto;
+  padding-bottom: 15.4%;
+  overflow: hidden;
+}
+@media screen and (max-width: 970px) {
+  .c-quiz-objectif .c-quiz-objectif-container {
+    padding-bottom: 25%;
+  }
+}
+@media screen and (max-width: 970px) {
+  .c-quiz-objectif .c-quiz-objectif-container {
+    padding-bottom: 29%;
+  }
+}
+.c-quiz-objectif footer {
+  background-color: #f2f6f9;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.c-quiz-objectif footer > div {
+  max-width: 345px;
+  display: block;
+  margin: 0 auto;
+}
+.c-quiz-objectif footer button {
+  margin: 0 auto;
+  padding: 2% 45%;
+  display: block;
+  margin-bottom: 10%;
 }
 
 /*# sourceMappingURL=all.css.map */

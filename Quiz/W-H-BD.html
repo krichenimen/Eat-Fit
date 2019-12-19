@@ -16,7 +16,7 @@
 </head>
 
 <body>
-   <div class="c-quiz-gender">
+   <div class="c-quiz-objectif">
       <header>
          <div class="u-flex-space-between">
             <div><img src="" alt=""></div>
@@ -24,23 +24,12 @@
             <button type="button" class="btn btn-primary">Se connecter</button>
          </div>
       </header>
-      <section class="c-quiz-gender-container">
-         <h1 class="text-center">Vous êtes ?</h1>
-         <div class="u-flex-space-between">
-            <fieldset class="o-input-radio--square">
-               <input type="radio" name="gender" value="valuable" id="male">
-               <label for="male">
-                  <div class="o-checkbox-image"></div>
-                  <h5 class="text-center u-uppercase">un Homme</h5>
-               </label>
-            </fieldset>
-            <fieldset class="o-input-radio--square">
-               <input type="radio" name="gender" value="valuable" id="female">
-               <label for="female">
-                  <div class="o-checkbox-image"></div>
-                  <h5 class="text-center u-uppercase">une Femme</h5>
-               </label>
-            </fieldset>
+      <section class="c-quiz-objectif-container">
+         <h1 class="text-center">Faisons plus connaissance</h1>
+         <div>
+
+            <input id="ex17a" type="text" />
+            <input id="ex17b" type="text" />
          </div>
       </section>
       <footer>
@@ -56,6 +45,40 @@
    <script src=" ../js/jquery-3.4.1.min.js"> </script>
    <!-- Bootstrap JS -->
    <script src="../js/bootstrap.min.js"></script>
+   <script type="text/javascript" src="js/bootstrap-slider.js"></script>
+   <script type="text/javascript" src="dependencies/js/highlight.min.js"></script>
+   <script>
+      // With JQuery
+      $("#ex17a").slider({
+         min: 0,
+         max: 10,
+         value: 0,
+         tooltip_position: 'bottom'
+      });
+      $("#ex17b").slider({
+         min: 0,
+         max: 10,
+         value: 0,
+         orientation: 'vertical',
+         tooltip_position: 'left'
+      });
+
+      // Without JQuery
+      var sliderA = new Slider("#ex17a", {
+         min: 0,
+         max: 10,
+         value: 0,
+         tooltip_position: 'bottom'
+      });
+
+      var sliderB = new Slider("#ex17b", {
+         min: 0,
+         max: 10,
+         value: 0,
+         orientation: 'vertical',
+         tooltip_position: 'left'
+      });
+   </script>
 </body>
 
 </html>

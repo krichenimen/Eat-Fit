@@ -16,29 +16,126 @@
     }
 }
 
+/* progress bar */
+.c-progressbar {
+    background-color: #ededed;
+    border-radius: 13px;
+    padding: 1px;
+    margin-bottom: 10%;
+}
+
+.c-progressbar>div {
+    background-color: $color-primary;
+    width: 10%;
+    /* Adjust with JavaScript */
+    height: 5px;
+    border-radius: 5px;
+}
+
+/**********************gender part css*******************/
 .c-quiz-gender {
+    background-color: $color-bg;
+
+    h1 {
+        font-size: 1.5rem;
+        margin-top: 26%;
+        margin-bottom: 8%;
+
+    }
+
+    .c-quiz-gender-container {
+        max-width: 345px;
+        display: block;
+        margin: 0 auto;
+        padding-bottom: 15.4%;
+        overflow: hidden;
+
+        @media screen and (max-width:970px) {
+            padding-bottom: 25%;
+        }
+
+        @media screen and (max-width:970px) {
+            padding-bottom: 29%;
+        }
+
+    }
+
     footer {
+        background-color: $color-bg;
         position: fixed;
         bottom: 0;
         left: 0;
         right: 0;
-        max-width: 345px;
+
+        >div {
+
+            max-width: 345px;
+            display: block;
+            margin: 0 auto;
+        }
+
+
+        button {
+            margin: 0 auto;
+            padding: 2% 45%;
+            display: block;
+            margin-bottom: 10%;
+        }
+    }
+
+
+}
+
+
+/**********************objectif part css*******************/
+
+.c-quiz-objectif {
+    background-color: $color-bg;
+
+    h1 {
+        font-size: 1.5rem;
+        margin-top: 14%;
+        margin-bottom: 8%;
+
+    }
+
+    .c-quiz-objectif-container {
+        max-width: 534px;
         display: block;
         margin: 0 auto;
+        padding-bottom: 15.4%;
+        overflow: hidden;
+
+        @media screen and (max-width:970px) {
+            padding-bottom: 25%;
+        }
+
+        @media screen and (max-width:970px) {
+            padding-bottom: 29%;
+        }
+
     }
 
-    .c-progressbar {
-        background-color: black;
-        border-radius: 13px;
-        /* (height of inner div) / 2 + padding */
-        padding: 3px;
-    }
+    footer {
+        background-color: $color-bg;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
 
-    .c-progressbar>div {
-        background-color: orange;
-        width: 40%;
-        /* Adjust with JavaScript */
-        height: 20px;
-        border-radius: 10px;
+        >div {
+
+            max-width: 345px;
+            display: block;
+            margin: 0 auto;
+        }
+
+
+        button {
+            margin: 0 auto;
+            padding: 2% 45%;
+            display: block;
+            margin-bottom: 10%;
+        }
     }
 }

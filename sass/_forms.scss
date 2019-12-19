@@ -59,3 +59,44 @@ input[type=radio]:checked+label div:nth-of-type(2) {
     border: none;
     color: black;
 }
+
+/* square form */
+.o-input-radio--square {
+
+    input[type=checkbox]+label,
+    input[type=radio]+label {
+        background-color: transparent;
+        height: 150px;
+        width: 163px;
+        border-radius: 5px;
+        border: 3px solid #000;
+        cursor: pointer;
+
+    }
+
+    input[type=checkbox]:checked+label,
+    input[type=radio]:checked+label {
+        background-color: $color-primary;
+        height: 150px;
+        width: 163px;
+        border-radius: 5px;
+        border: 3px solid #000;
+        cursor: pointer;
+    }
+
+    input[type=checkbox]+label h5,
+    input[type=radio]+label h5 {
+        color: $color-primary;
+        opacity: 0.67;
+    }
+
+    input[type=checkbox]:checked+label h5,
+    input[type=radio]:checked+label h5 {
+        color: white;
+    }
+
+    h5 {
+        font-size: 0.875rem;
+        padding-top: 50px;
+    }
+}
