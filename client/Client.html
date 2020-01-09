@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+   <!-- Required meta tags -->
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title>Eat & Feat</title>
+   <link rel="icon" href="../img/favicon.png">
+   <!-- Font Awesome -->
+   <link href="../fonts/font-awesome/css/all.min.css" rel="stylesheet">
+   <!-- Bootstrap CSS -->
+   <link rel="stylesheet" href="../css/bootstrap.min.css">
+   <!-- style -->
+   <link rel="stylesheet" href="../css/all.css">
+</head>
+
+<body>
+   <header>
+      <div class="u-flex-space-between">
+         <img src="" alt="">
+         <nav>
+            <a href="">PROFILE</a>
+            <a href="">MENU</a>
+            <a href="">RENDEZ-VOUS</a>
+         </nav>
+         <button type="button" class="btn btn-primary">Deconnexion</button>
+      </div>
+   </header>
+   <section class="c-profile-edit">
+      <div class="row">
+         <!-- search block-->
+         <div class="col-md-4">
+            <form>
+               <div class="c-profile-edit__profile">
+                  <h2>Profile</h2>
+                  <div class="form-group u-flex-space-between-no-center">
+                     <label class="o-custom-file-upload" for="file-upload">
+                        <span class="u-uppercase">Changer votre INFORMATION PERSONNELLES</span>
+                     </label>
+                     <input id="file-upload" type="file" />
+                     <div class="c-profile-edit__profile-img">
+                        <img src="https://i.pinimg.com/originals/2e/2f/ac/2e2fac9d4a392456e511345021592dd2.jpg" alt="">
+                     </div>
+                  </div>
+                  <div class="form-group">
+                     <label for="NomPrenom">Nom et prénom:</label>
+                     <input type="text" class="form-control" id="NomPrenom" placeholder="Entrer le nom et le prénom">
+                  </div>
+                  <div class="form-group">
+                     <label for="tel">Numéro de téléphone:</label>
+                     <input type="tel" class="form-control" id="tel" placeholder="Entrer le numéro du téléphone">
+                  </div>
+               </div>
+               <div>
+                  <h2 class="pt-4">Information de livraison</h2>
+                  <div class="form-group">
+                     <label for="adress1">Adresse ligne 1: </label>
+                     <input type="text" class="form-control" id="adress1" placeholder="Adresse ligne 1">
+                  </div>
+                  <div class="form-group">
+                     <label for="adress2">Adresse ligne 2:</label>
+                     <input type="text" class="form-control" id="adress2" placeholder="Adresse ligne 2">
+                  </div>
+                  <div class="form-group">
+                     <label for="zip">ZIP code:</label>
+                     <input type="number" class="form-control" id="zip" placeholder="Entrer le ZIP code">
+                  </div>
+               </div>
+            </form>
+         </div>
+         <!-- create client -->
+         <div class="col-md-8">
+            <h2>Information de compte</h2>
+            <form>
+               <div class="row">
+                  <div class="col-md-6 pl-0">
+                     <div class="form-group">
+                        <label for="InputEmail">Adresse email:</label>
+                        <input type="email" class="form-control" id="InputEmail" placeholder="Entrer l'email">
+                     </div>
+                     <div class="form-group">
+                        <label for="NvInputEmail">Nouvelle adresse email:</label>
+                        <input type="email" class="form-control" id="NvInputEmail" placeholder="Entrer l'email">
+                     </div>
+                     <div class="form-group">
+                        <label for="ConfirmerNvInputEmail">Confirmation de nouvelle adresse email:</label>
+                        <input type="email" class="form-control" id="ConfirmerNvInputEmail"
+                           placeholder="Entrer l'email">
+                     </div>
+                  </div>
+                  <div class="col-md-6 pr-0 ">
+                     <div class="form-group">
+                        <label for="AncienMDP">Ancien mot de passe</label>
+                        <input type="password" class="form-control" id="AncienMDP"
+                           placeholder="Entrer l'ancien mot de passe">
+                     </div>
+                     <div class="form-group">
+                        <label for="NvMDP">Nouveau mot de passe</label>
+                        <input type="password" class="form-control" id="NvMDP"
+                           placeholder="Entrer le nouveau mot de passe">
+                     </div>
+                     <div class="form-group">
+                        <label for="confirmationMDP">Confirmation de nouveau mot de passe</label>
+                        <input type="password" class="form-control" id="confirmationMDP"
+                           placeholder="Confirmer le mot de passe">
+                     </div>
+                  </div>
+               </div>
+            </form>
+            <div class="c-profile-edit__info-account__button text-center">
+               <button class="btn btn-primary u-uppercase">Sauvgarder</button>
+            </div>
+         </div>
+      </div>
+   </section>
+   <!-- jquery v-3.4.1 -->
+   <script src=" ../js/jquery-3.4.1.min.js"> </script>
+   <!-- Bootstrap JS -->
+   <script src="../js/bootstrap.min.js"></script>
+</body>
+
+</html>

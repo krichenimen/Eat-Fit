@@ -1,0 +1,64 @@
+/**********************client part css*******************/
+
+/* edit profile */
+
+.c-profile-edit {
+    padding: 2.16rem 3.33rem 5.83rem;
+    background-color: $color-bg;
+
+    h2 {
+        font-size: 1.5rem;
+        padding-bottom: 1.4rem;
+    }
+
+    input {
+        border-radius: .312rem;
+        border: 0 none !important;
+        padding: 1.8rem 0 1.9rem 1.25rem !important;
+    }
+
+    .form-group {
+        margin-bottom: 1.4rem;
+    }
+
+    .input-group-text {
+        border: 0;
+        background-color: $color-white;
+        padding-right: 1.25rem;
+        font-size: 1.3rem;
+        color: $color-icon-search;
+    }
+
+    .c-profile-edit__info-account__button button {
+        display: block;
+        padding: 10px;
+        width: 100%;
+        font-size: 1rem;
+        margin-top: 2rem;
+    }
+
+    input[type="file"] {
+        display: none;
+    }
+
+    .o-custom-file-upload {
+        display: inline-block;
+        padding: 16px 12px;
+        cursor: pointer;
+        background-color: $color-primary;
+        color: white;
+        border-radius: 5px;
+    }
+
+    .c-profile-edit__profile {
+        .c-profile-edit__profile-img {
+            img {
+                width: 50px;
+                height: 50px;
+                border-radius: 33px;
+                background-color: $color-primary;
+            }
+        }
+
+    }
+}

@@ -118,6 +118,11 @@ body {
   justify-content: center;
 }
 
+.u-flex-space-between-no-center {
+  display: flex;
+  justify-content: space-between;
+}
+
 .u-flex-space-between {
   display: flex;
   align-items: center;
@@ -135,9 +140,20 @@ body {
   flex-direction: column;
 }
 
+.u-flex-content-end {
+  display: flex;
+  justify-content: flex-end;
+}
+
 .u-center-justify-center {
   display: flex;
   align-items: center;
+  justify-content: center;
+}
+
+.u-center-items-baseline {
+  display: flex;
+  align-items: baseline;
   justify-content: center;
 }
 
@@ -155,6 +171,10 @@ body {
 
 .u-scroll-x {
   overflow-x: scroll;
+}
+
+.u-barred {
+  text-decoration: line-through;
 }
 
 .mt-6 {
@@ -331,8 +351,12 @@ nav a:hover {
 
 .bg-home-secondary {
   background-color: rgba(158, 186, 208, 0.07);
+  padding-bottom: 3rem;
 }
 
+.c-home {
+  /* c-formules */
+}
 .c-home .c-presentation h2 {
   color: #1d265c;
   font-size: 2.5rem;
@@ -453,6 +477,230 @@ nav a:hover {
 .c-home .c-summary-result-second-part p {
   color: #4f5051;
   font-size: 1.5rem;
+}
+.c-home .c-formule-container h2 {
+  color: #1d265c;
+  text-align: center;
+  font-size: 2rem;
+  padding: 3rem 0 4rem;
+}
+@media (min-width: 800px) {
+  .c-home .c-formule-container .container {
+    max-width: 860px;
+  }
+}
+@media (max-width: 800px) {
+  .c-home .c-formule-container .container {
+    max-width: 500px;
+  }
+}
+@media (min-width: 992px) {
+  .c-home .c-formule-container .container {
+    max-width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .c-home .c-formule-container .container {
+    max-width: 1140px;
+  }
+}
+.c-home .c-formule-container .c-formules {
+  width: 100%;
+  margin: 2.5rem 0;
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  -moz-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -moz-align-items: -moz-stretch;
+  -webkit-align-items: -webkit-stretch;
+  -ms-align-items: -ms-stretch;
+  align-items: stretch;
+}
+.c-home .c-formule-container .c-formules h3 {
+  font-size: 2.166rem;
+  font-weight: bold;
+  margin-left: 0.9rem;
+}
+.c-home .c-formule-container .c-formules span {
+  font-size: 1.25rem;
+  display: inline-block;
+}
+.c-home .c-formule-container .c-formules .o-light-text {
+  color: #707070;
+  font-size: 1.166rem;
+  font-weight: 300;
+}
+.c-home .c-formule-container .c-formules h4 {
+  font-size: 2.833rem;
+  font-weight: bold;
+  display: flex;
+  align-items: flex-end;
+}
+.c-home .c-formule-container .c-formules h5 {
+  font-size: 1.166rem;
+  margin-bottom: 0.9rem;
+}
+.c-home .c-formule-container .c-formules .o-label-with-info {
+  margin-bottom: 0.9rem;
+}
+.c-home .c-formule-container .c-formules .o-label-with-info h5 {
+  margin-bottom: 0;
+  padding-right: 10px;
+}
+.c-home .c-formule-container .c-formules .c-formules__prix {
+  margin: 1rem 0 2rem;
+}
+.c-home .c-formule-container .c-formules .c-formule__button {
+  position: relative;
+  top: 22px;
+}
+.c-home .c-formule-container .c-formules .c-formule__button button {
+  padding: 10px 30px;
+  font-size: 1.333rem;
+}
+.c-home .c-formule-container .c-formules > * {
+  -moz-flex-shrink: 1;
+  -webkit-flex-shrink: 1;
+  -ms-flex-shrink: 1;
+  flex-shrink: 1;
+  -moz-flex-grow: 0;
+  -webkit-flex-grow: 0;
+  -ms-flex-grow: 0;
+  flex-grow: 0;
+  width: 33.3333333333%;
+  padding: 1.5rem;
+  width: calc(33.3333333333% + 1rem);
+}
+.c-home .c-formule-container .c-formules > :nth-child(-n+3) {
+  padding-top: 0;
+}
+.c-home .c-formule-container .c-formules > :nth-last-child(-n+3) {
+  padding-bottom: 0;
+}
+.c-home .c-formule-container .c-formules > :nth-child(3n+1) {
+  padding-left: 0;
+}
+.c-home .c-formule-container .c-formules > :nth-child(3n) {
+  padding-right: 0;
+}
+.c-home .c-formule-container .c-formules > :nth-child(3n+1),
+.c-home .c-formule-container .c-formules > :nth-child(3n) {
+  width: calc(33.3333333333% + -0.5rem);
+}
+.c-home .c-formule-container .c-formules .content {
+  border-radius: 4px;
+  padding: 2rem 2rem 0;
+  box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.025);
+  border-radius: 5px;
+  border: solid 1px #000;
+  height: 400px;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+@media (min-width: 768px) {
+  .c-home .c-formule-container .c-formules .content {
+    height: 450px;
+  }
+}
+@media (max-width: 768px) {
+  .c-home .c-formule-container .c-formules .content {
+    height: 400px;
+    margin-bottom: 2.5rem;
+  }
+}
+.c-home .c-formule-container .c-formules .content .icon {
+  font-size: 1.666rem;
+}
+.c-home .c-formule-container .c-formules > div > :last-child {
+  margin-bottom: 0;
+}
+@media screen and (max-width: 800px) {
+  .c-home .c-formule-container .c-formules > * {
+    width: 100%;
+    padding: 1rem;
+    width: calc(33.3333333333% + 0.6666666667rem);
+  }
+  .c-home .c-formule-container .c-formules > :nth-child(-n+3) {
+    padding-top: 1rem;
+  }
+  .c-home .c-formule-container .c-formules > :nth-last-child(-n+3) {
+    padding-bottom: 1rem;
+  }
+  .c-home .c-formule-container .c-formules > :nth-child(3n+1) {
+    padding-left: 1rem;
+  }
+  .c-home .c-formule-container .c-formules > :nth-child(3n) {
+    padding-right: 1rem;
+  }
+  .c-home .c-formule-container .c-formules > :nth-child(3n+1),
+.c-home .c-formule-container .c-formules > :nth-child(3n) {
+    padding: 1rem;
+    width: calc(100% + 2rem);
+  }
+  .c-home .c-formule-container .c-formules > * {
+    padding: 1rem;
+    width: calc(50% + 1rem);
+  }
+  .c-home .c-formule-container .c-formules > :nth-child(-n+2) {
+    padding-top: 1rem;
+  }
+  .c-home .c-formule-container .c-formules > :nth-last-child(-n+2) {
+    padding-bottom: 1rem;
+  }
+  .c-home .c-formule-container .c-formules > :nth-child(2n+1) {
+    padding-left: 1rem;
+  }
+  .c-home .c-formule-container .c-formules > :nth-child(2n) {
+    padding-right: 1rem;
+  }
+  .c-home .c-formule-container .c-formules > :nth-child(2n+1),
+.c-home .c-formule-container .c-formules > :nth-child(2n),
+.c-home .c-formule-container .c-formules > * {
+    padding: 1rem;
+    width: calc(100% + 2rem);
+  }
+  .c-home .c-formule-container .c-formules > :nth-child(-n+1) {
+    padding-top: 0;
+  }
+  .c-home .c-formule-container .c-formules > :nth-last-child(-n+1) {
+    padding-bottom: 0;
+  }
+  .c-home .c-formule-container .c-formules > :nth-child(1n+1) {
+    padding-left: 0;
+  }
+  .c-home .c-formule-container .c-formules > :nth-child(1n) {
+    padding-right: 0;
+  }
+  .c-home .c-formule-container .c-formules > :nth-child(1n+1),
+.c-home .c-formule-container .c-formules > :nth-child(1n) {
+    width: calc(100% + 1rem);
+  }
+}
+.c-home .c-pictures h2 {
+  color: #1d265c;
+  text-align: center;
+  font-size: 2rem;
+  padding: 4rem 0;
+}
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-250px * 4));
+  }
+}
+.c-home .c-pictures .slider .slide-track {
+  animation: scroll 40s linear infinite;
+  display: flex;
+  width: calc(250px * 14);
 }
 
 /**********************rdv part css*******************/
@@ -597,7 +845,7 @@ nav a:hover {
 /**********************create client part css*******************/
 .c-create-client h2,
 .c-modifier-client__profile h2 {
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   margin-bottom: 3.75rem;
 }
 .c-create-client .c-frequence-sportive-items,
@@ -879,6 +1127,56 @@ nav a:hover {
   padding: 2% 45%;
   display: block;
   margin-bottom: 10%;
+}
+
+/**********************client part css*******************/
+/* edit profile */
+.c-profile-edit {
+  padding: 2.16rem 3.33rem 5.83rem;
+  background-color: #f2f6f9;
+}
+.c-profile-edit h2 {
+  font-size: 1.5rem;
+  padding-bottom: 1.4rem;
+}
+.c-profile-edit input {
+  border-radius: 0.312rem;
+  border: 0 none !important;
+  padding: 1.8rem 0 1.9rem 1.25rem !important;
+}
+.c-profile-edit .form-group {
+  margin-bottom: 1.4rem;
+}
+.c-profile-edit .input-group-text {
+  border: 0;
+  background-color: #fff;
+  padding-right: 1.25rem;
+  font-size: 1.3rem;
+  color: #4d4d4d;
+}
+.c-profile-edit .c-profile-edit__info-account__button button {
+  display: block;
+  padding: 10px;
+  width: 100%;
+  font-size: 1rem;
+  margin-top: 2rem;
+}
+.c-profile-edit input[type=file] {
+  display: none;
+}
+.c-profile-edit .o-custom-file-upload {
+  display: inline-block;
+  padding: 16px 12px;
+  cursor: pointer;
+  background-color: #000;
+  color: white;
+  border-radius: 5px;
+}
+.c-profile-edit .c-profile-edit__profile .c-profile-edit__profile-img img {
+  width: 50px;
+  height: 50px;
+  border-radius: 33px;
+  background-color: #000000;
 }
 
 /*# sourceMappingURL=all.css.map */

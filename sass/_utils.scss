@@ -13,6 +13,11 @@
     justify-content: center;
 }
 
+.u-flex-space-between-no-center {
+    display: flex;
+    justify-content: space-between;
+}
+
 .u-flex-space-between {
     display: flex;
     align-items: center;
@@ -30,9 +35,20 @@
     flex-direction: column;
 }
 
+.u-flex-content-end {
+    display: flex;
+    justify-content: flex-end;
+}
+
 .u-center-justify-center {
     display: flex;
     align-items: center;
+    justify-content: center;
+}
+
+.u-center-items-baseline {
+    display: flex;
+    align-items: baseline;
     justify-content: center;
 }
 
@@ -50,6 +66,10 @@
 
 .u-scroll-x {
     overflow-x: scroll;
+}
+
+.u-barred {
+    text-decoration: line-through;
 }
 
 .mt-6 {
