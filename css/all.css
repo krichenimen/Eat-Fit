@@ -978,6 +978,7 @@ nav a:hover {
 /* calendar */
 .c-calendar .datepicker {
   width: 90%;
+  border: none;
 }
 .c-calendar .datepicker--cell {
   height: 80px;
@@ -1178,6 +1179,78 @@ nav a:hover {
   height: 50px;
   border-radius: 33px;
   background-color: #000;
+}
+
+/* net */
+.c-client-net {
+  padding: 4.16rem 3.33rem 5.83rem;
+  background-color: #f2f6f9;
+}
+.c-client-net h2 {
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+}
+.c-client-net .c-client-net__information > div:nth-of-type(1) {
+  background-color: white;
+  padding: 1.66rem;
+  border-radius: 5px;
+  height: 272px;
+}
+.c-client-net .c-client-net__information .c-client-net__information-data {
+  margin-left: 1rem;
+}
+.c-client-net .c-client-net__information .c-client-net-img {
+  width: 98px;
+  height: 98px;
+  background-color: black;
+  border-radius: 50px;
+}
+.c-client-net .c-client-net__information h3 {
+  font-size: 1.33rem;
+}
+.c-client-net .c-client-net__information h4 {
+  font-size: 1.16rem;
+  margin: 1.5rem 0;
+}
+.c-client-net .c-client-net__information p,
+.c-client-net .c-client-net__information a {
+  font-size: 1rem;
+}
+.c-client-net .c-client-net__information a {
+  color: black;
+  text-decoration: underline;
+}
+.c-client-net .c-client-net__information .c-client-net-fiche-button {
+  margin: 0 auto;
+  display: block;
+}
+.c-client-net .c-client-net__information .c-client-net-button {
+  display: block;
+  padding: 10px;
+  width: 100%;
+  font-size: 1rem;
+  margin-top: 2rem;
+}
+.c-client-net .c-client-net__information .c-client-net-hours {
+  display: flex;
+  flex-wrap: wrap;
+}
+.c-client-net .c-client-net__information .c-client-net-hours > div {
+  width: 18%;
+  margin-right: 1rem;
+}
+.c-client-net .c-client-net__information .c-client-net-hours .c-client-net-hours__button {
+  background-color: #fff;
+  border-color: #4267b2;
+  box-sizing: border-box;
+  color: #4267b2;
+  width: 100%;
+}
+.c-client-net .c-client-net__information .c-client-net-hours .c-client-net-hours__button :before {
+  content: "";
+  display: inline-block;
+  height: 20px;
+  vertical-align: middle;
 }
 
 /* profile */
