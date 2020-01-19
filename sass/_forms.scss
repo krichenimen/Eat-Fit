@@ -100,3 +100,58 @@ input[type=radio]:checked+label div:nth-of-type(2) {
         padding-top: 50px;
     }
 }
+
+
+/* checkbox client menu */
+.o-checkbox-menu {
+    position: relative;
+    left: 83%;
+
+    .container input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 0;
+        width: 0;
+    }
+
+    .checkmark {
+        position: absolute;
+        top: 24px;
+        left: 0;
+        height: 66px;
+        width: 66px;
+        background-color: #eee;
+        border-radius: 5px;
+    }
+
+    .container:hover input~.checkmark {
+        background-color: #fff;
+    }
+
+    .container input:checked~.checkmark {
+        background-color: #fff;
+    }
+
+    .checkmark:after {
+        content: "";
+        position: absolute;
+        display: none;
+    }
+
+    .container input:checked~.checkmark:after {
+        display: block;
+    }
+
+    .container .checkmark:after {
+        left: 27px;
+        top: 10px;
+        width: 15px;
+        height: 37px;
+        border: solid #dbdbdb;
+        border-width: 0 5px 5px 0;
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+}

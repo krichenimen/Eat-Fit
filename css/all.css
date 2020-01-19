@@ -315,6 +315,53 @@ input[type=radio]:checked + label div:nth-of-type(2) {
   padding-top: 50px;
 }
 
+/* checkbox client menu */
+.o-checkbox-menu {
+  position: relative;
+  left: 83%;
+}
+.o-checkbox-menu .container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.o-checkbox-menu .checkmark {
+  position: absolute;
+  top: 24px;
+  left: 0;
+  height: 66px;
+  width: 66px;
+  background-color: #eee;
+  border-radius: 5px;
+}
+.o-checkbox-menu .container:hover input ~ .checkmark {
+  background-color: #fff;
+}
+.o-checkbox-menu .container input:checked ~ .checkmark {
+  background-color: #fff;
+}
+.o-checkbox-menu .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.o-checkbox-menu .container input:checked ~ .checkmark:after {
+  display: block;
+}
+.o-checkbox-menu .container .checkmark:after {
+  left: 27px;
+  top: 10px;
+  width: 15px;
+  height: 37px;
+  border: solid #dbdbdb;
+  border-width: 0 5px 5px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
 /**********************header part css*******************/
 header {
   padding: 1rem 3.33rem;
@@ -1386,6 +1433,9 @@ nav a:hover {
 }
 
 /* Menu */
+.c-client-menu {
+  /* c-formules */
+}
 .c-client-menu .c-client-menu-repas {
   background-color: #f2f6f9;
   padding: 2.16rem 3.33rem 5.83rem;
@@ -1407,8 +1457,157 @@ nav a:hover {
   color: #fff;
   background-color: #000;
 }
+.c-client-menu .c-client-menu-repas-items .c-client-menu-repas-item {
+  width: 100%;
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  -moz-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -moz-align-items: -moz-stretch;
+  -webkit-align-items: -webkit-stretch;
+  -ms-align-items: -ms-stretch;
+  align-items: stretch;
+}
+.c-client-menu .c-client-menu-repas-items .c-client-menu-repas-item > * {
+  -moz-flex-shrink: 1;
+  -webkit-flex-shrink: 1;
+  -ms-flex-shrink: 1;
+  flex-shrink: 1;
+  -moz-flex-grow: 0;
+  -webkit-flex-grow: 0;
+  -ms-flex-grow: 0;
+  flex-grow: 0;
+  width: 50%;
+  padding: 1.5rem;
+  width: calc(50% + 1rem);
+}
+.c-client-menu .c-client-menu-repas-items .c-client-menu-repas-item > :nth-child(-n+2) {
+  padding-top: 0;
+}
+.c-client-menu .c-client-menu-repas-items .c-client-menu-repas-item > :nth-last-child(-n+2) {
+  padding-bottom: 0;
+}
+.c-client-menu .c-client-menu-repas-items .c-client-menu-repas-item > :nth-child(2n+1) {
+  padding-left: 0;
+}
+.c-client-menu .c-client-menu-repas-items .c-client-menu-repas-item > :nth-child(2n) {
+  padding-right: 0;
+}
+.c-client-menu .c-client-menu-repas-items .c-client-menu-repas-item > :nth-child(2n+1),
+.c-client-menu .c-client-menu-repas-items .c-client-menu-repas-item > :nth-child(2n) {
+  width: calc(50% + -0.5rem);
+}
+.c-client-menu .c-client-menu-repas-items .c-client-menu-repas-item .content {
+  padding: 0;
+  border-radius: 5px;
+  height: 400px;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+.c-client-menu .c-client-menu-repas-items .c-client-menu-repas-item .content .o-preview-image-panel {
+  width: 100%;
+  height: 250px;
+  background-color: #dbdbdb;
+  display: flex;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border-radius: 5px;
+}
+.c-client-menu .c-client-menu-repas-items .c-client-menu-repas-item .content .o-preview-image-panel__image {
+  margin: 0 auto;
+  max-width: 100%;
+  max-height: 100%;
+  height: auto;
+}
+.c-client-menu .c-client-menu-repas-items .c-client-menu-repas-item .content h3 {
+  padding-top: 3rem;
+  padding-bottom: 1rem;
+  font-size: 1.5rem;
+  color: #56745b;
+}
+.c-client-menu .c-client-menu-repas-items .c-client-menu-repas-item .content p {
+  color: #4f5051;
+  font-size: 1.166rem;
+  line-height: 1.57;
+  letter-spacing: normal;
+}
+@media screen and (max-width: 800px) {
+  .c-client-menu .c-client-menu-repas-items .c-client-menu-repas-item > * {
+    width: 100%;
+    padding: 1rem;
+    width: calc(50% + 0.6666666667rem);
+  }
+  .c-client-menu .c-client-menu-repas-items .c-client-menu-repas-item > :nth-child(-n+2) {
+    padding-top: 1rem;
+  }
+  .c-client-menu .c-client-menu-repas-items .c-client-menu-repas-item > :nth-last-child(-n+2) {
+    padding-bottom: 1rem;
+  }
+  .c-client-menu .c-client-menu-repas-items .c-client-menu-repas-item > :nth-child(2n+1) {
+    padding-left: 1rem;
+  }
+  .c-client-menu .c-client-menu-repas-items .c-client-menu-repas-item > :nth-child(2n) {
+    padding-right: 1rem;
+  }
+  .c-client-menu .c-client-menu-repas-items .c-client-menu-repas-item > :nth-child(2n+1),
+.c-client-menu .c-client-menu-repas-items .c-client-menu-repas-item > :nth-child(2n) {
+    padding: 1rem;
+    width: calc(100% + 2rem);
+  }
+  .c-client-menu .c-client-menu-repas-items .c-client-menu-repas-item > * {
+    padding: 1rem;
+    width: calc(50% + 1rem);
+  }
+  .c-client-menu .c-client-menu-repas-items .c-client-menu-repas-item > :nth-child(-n+2) {
+    padding-top: 1rem;
+  }
+  .c-client-menu .c-client-menu-repas-items .c-client-menu-repas-item > :nth-last-child(-n+2) {
+    padding-bottom: 1rem;
+  }
+  .c-client-menu .c-client-menu-repas-items .c-client-menu-repas-item > :nth-child(2n+1) {
+    padding-left: 1rem;
+  }
+  .c-client-menu .c-client-menu-repas-items .c-client-menu-repas-item > :nth-child(2n) {
+    padding-right: 1rem;
+  }
+  .c-client-menu .c-client-menu-repas-items .c-client-menu-repas-item > :nth-child(2n+1),
+.c-client-menu .c-client-menu-repas-items .c-client-menu-repas-item > :nth-child(2n),
+.c-client-menu .c-client-menu-repas-items .c-client-menu-repas-item > * {
+    padding: 1rem;
+    width: calc(100% + 2rem);
+  }
+  .c-client-menu .c-client-menu-repas-items .c-client-menu-repas-item > :nth-child(-n+1) {
+    padding-top: 0;
+  }
+  .c-client-menu .c-client-menu-repas-items .c-client-menu-repas-item > :nth-last-child(-n+1) {
+    padding-bottom: 0;
+  }
+  .c-client-menu .c-client-menu-repas-items .c-client-menu-repas-item > :nth-child(1n+1) {
+    padding-left: 0;
+  }
+  .c-client-menu .c-client-menu-repas-items .c-client-menu-repas-item > :nth-child(1n) {
+    padding-right: 0;
+  }
+  .c-client-menu .c-client-menu-repas-items .c-client-menu-repas-item > :nth-child(1n+1),
+.c-client-menu .c-client-menu-repas-items .c-client-menu-repas-item > :nth-child(1n) {
+    width: calc(100% + 1rem);
+  }
+}
 .c-client-menu .c-client-menu-choix {
-  padding: 2.16rem 3.33rem 5.83rem;
+  padding: 1.16rem 1.33rem 1.83rem;
+}
+.c-client-menu .c-client-menu-choix button {
+  padding: 1rem 0.8rem;
 }
 
 /*# sourceMappingURL=all.css.map */
